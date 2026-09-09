@@ -11,6 +11,9 @@ import type { CodebaseFile, CodeSymbol, CodeDependency } from './types.js';
 import type { ProjectInfo } from '../discovery/ProjectDetector.js';
 import { CodeSearch } from '../search/CodeSearch.js';
 import type { SearchResult, SearchOptions } from '../search/CodeSearch.js';
+import { DependencyAnalyzer } from '../analysis/DependencyAnalyzer.js';
+import { ImpactAnalyzer } from '../analysis/ImpactAnalyzer.js';
+import type { ImpactResult } from '../analysis/ImpactAnalyzer.js';
 
 export interface CodebaseOptions {
   ignore?: string[];
@@ -99,6 +102,18 @@ export class Codebase {
   public search(query: string, options: SearchOptions = {}): SearchResult[] {
     const searcher = new CodeSearch(this.files(), this.symbols());
     return searcher.search(query, options);
+  }
+
+  public dependencies(file: string): string[] {
+    return new DependencyAnalyzer(this._graph).dependencies(file);
+  }
+
+  public dependents(file: string): string[] {
+    return new DependencyAnalyzer(this._graph).dependents(file);
+  }
+
+  public impact(file: string): ImpactResult {
+    return new ImpactAnalyzer(this._graph).impact(file);
   }
 
   public isAnalyzed(): boolean {
