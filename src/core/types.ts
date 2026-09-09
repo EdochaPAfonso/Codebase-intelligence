@@ -2,7 +2,7 @@ export type SupportedLanguage = 'typescript' | 'javascript' | 'json';
 
 export type SymbolKind = 'class' | 'interface' | 'function' | 'method' | 'variable' | 'typeAlias';
 
-export type DependencyType = 'import' | 'extends' | 'implements';
+export type DependencyType = 'import' | 'extends' | 'implements' | 'unresolved';
 
 export interface CodebaseFile {
   path: string;
@@ -18,6 +18,7 @@ export interface CodeSymbol {
   file: string;
   startLine: number;
   endLine: number;
+  parentId?: string;
 }
 
 export interface CodeDependency {
