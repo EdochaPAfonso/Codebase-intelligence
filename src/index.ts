@@ -13,3 +13,4 @@ export type {
 export type { ProjectInfo } from './discovery/ProjectDetector.js';
 export type { SymbolQuery } from './index/SymbolIndex.js';
 export type { SearchResult, SearchOptions, SearchMode } from './search/CodeSearch.js';
+export { CACHE_DIR_NAME } from './core/AnalysisCache.js';

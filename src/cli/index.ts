@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander';
+import * as path from 'path';
+import * as fs from 'fs';
 import { Codebase } from '../index.js';
+import { CACHE_DIR_NAME } from '../core/AnalysisCache.js';
 
 const program = new Command();
 
@@ -119,6 +122,26 @@ program
       
       const impact = codebase.impact(codebaseFile.path);
       printJson(impact);
+    } catch (error: any) {
+      console.error(`Error: ${error.message}`);
+      process.exit(1);
+    }
+  });
+
+program
+  .command('clear-cache')
+  .description('Clear the analysis cache for the given codebase directory')
+  .argument('[path]', 'Path to the codebase', '.')
+  .action(async (targetPath) => {
+    try {
+      const resolvedPath = path.resolve(targetPath);
+      const cacheDir = path.join(resolvedPath, CACHE_DIR_NAME);
+      if (fs.existsSync(cacheDir)) {
+        fs.rmSync(cacheDir, { recursive: true, force: true });
+        console.log(`Cache cleared: ${cacheDir}`);
+      } else {
+        console.log('No cache found — nothing to clear.');
+      }
     } catch (error: any) {
       console.error(`Error: ${error.message}`);
       process.exit(1);

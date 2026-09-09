@@ -14,9 +14,12 @@ import type { SearchResult, SearchOptions } from '../search/CodeSearch.js';
 import { DependencyAnalyzer } from '../analysis/DependencyAnalyzer.js';
 import { ImpactAnalyzer } from '../analysis/ImpactAnalyzer.js';
 import type { ImpactResult } from '../analysis/ImpactAnalyzer.js';
+import { AnalysisCache } from './AnalysisCache.js';
 
 export interface CodebaseOptions {
   ignore?: string[];
+  /** Enable on-disk caching of parse results. Defaults to true. */
+  cache?: boolean;
 }
 
 export class Codebase {
@@ -26,6 +29,7 @@ export class Codebase {
   private _symbolIndex = new SymbolIndex();
   private _graph = new DependencyGraph();
   private _analyzed = false;
+  private _cache: AnalysisCache | null = null;
 
   private readonly cwd: string;
   private readonly options: CodebaseOptions;
@@ -51,6 +55,12 @@ export class Codebase {
 
     instance._fileIndex.addAll(instance._files);
 
+    // Initialise cache unless explicitly disabled
+    const useCache = options.cache !== false;
+    if (useCache) {
+      instance._cache = new AnalysisCache(instance.cwd);
+    }
+
     return instance;
   }
 
@@ -66,14 +76,31 @@ export class Codebase {
       const parser = registry.getParser(file.language);
       if (!parser) continue;
 
+      // Cache hit?
+      const cached = this._cache?.get(file.path) ?? null;
+      if (cached) {
+        this._symbolIndex.addAll(cached.symbols);
+        allDependencies.push(...cached.dependencies);
+        continue;
+      }
+
+      // Cache miss — parse and store result
       try {
         const parsed = await parser.parse(file.path);
         this._symbolIndex.addAll(parsed.symbols);
         allDependencies.push(...parsed.dependencies);
+
+        this._cache?.set(file.path, {
+          symbols: parsed.symbols,
+          dependencies: parsed.dependencies
+        });
       } catch {
         // Skip files that fail to parse (e.g., invalid syntax)
       }
     }
+
+    // Persist updated cache entries to disk
+    await this._cache?.flush();
 
     const builder = new GraphBuilder();
     this._graph = builder.build(allDependencies);
@@ -118,5 +145,14 @@ export class Codebase {
 
   public isAnalyzed(): boolean {
     return this._analyzed;
+  }
+
+  /**
+   * Deletes the on-disk cache for this codebase.
+   * Subsequent calls to analyze() will re-parse all files.
+   */
+  public invalidateCache(): void {
+    this._cache?.invalidate();
+    this._cache = null;
   }
 }
