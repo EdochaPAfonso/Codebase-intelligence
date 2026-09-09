@@ -10,6 +10,9 @@
       "types": "./dist/index.d.ts"
     }
   },
+  "bin": {
+    "codebase-intelligence": "./dist/cli/index.js"
+  },
   "files": ["dist"],
   "repository": {
     "type": "git",
