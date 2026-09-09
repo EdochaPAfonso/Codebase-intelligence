@@ -1,0 +1,11 @@
+node_modules
+dist
+build
+coverage
+.next
+.expo
+out
+target
+.env
+.env.*
+.DS_Store
