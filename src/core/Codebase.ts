@@ -9,6 +9,8 @@ import { DependencyGraph } from '../graph/DependencyGraph.js';
 import { GraphBuilder } from '../graph/GraphBuilder.js';
 import type { CodebaseFile, CodeSymbol, CodeDependency } from './types.js';
 import type { ProjectInfo } from '../discovery/ProjectDetector.js';
+import { CodeSearch } from '../search/CodeSearch.js';
+import type { SearchResult, SearchOptions } from '../search/CodeSearch.js';
 
 export interface CodebaseOptions {
   ignore?: string[];
@@ -92,6 +94,11 @@ export class Codebase {
 
   public graph(): DependencyGraph {
     return this._graph;
+  }
+
+  public search(query: string, options: SearchOptions = {}): SearchResult[] {
+    const searcher = new CodeSearch(this.files(), this.symbols());
+    return searcher.search(query, options);
   }
 
   public isAnalyzed(): boolean {

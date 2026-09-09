@@ -12,3 +12,4 @@ export type {
 } from './core/types.js';
 export type { ProjectInfo } from './discovery/ProjectDetector.js';
 export type { SymbolQuery } from './index/SymbolIndex.js';
+export type { SearchResult, SearchOptions, SearchMode } from './search/CodeSearch.js';
