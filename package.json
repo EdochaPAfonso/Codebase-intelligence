@@ -1,8 +1,20 @@
 {
   "name": "codebase-intelligence",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "Analyze and understand codebases programmatically — file scanning, symbol indexing, dependency graphs, and code search.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/codebase-intelligence"
+  },
   "scripts": {
     "dev": "tsx src/index.ts",
     "build": "tsc",
