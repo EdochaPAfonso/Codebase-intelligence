@@ -99,6 +99,9 @@ export class Codebase {
       }
     }
 
+    // Prune deleted/renamed files from the cache
+    this._cache?.prune(new Set(this._files.map(f => f.path)));
+
     // Persist updated cache entries to disk
     await this._cache?.flush();
 

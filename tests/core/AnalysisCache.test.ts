@@ -98,6 +98,47 @@ describe('AnalysisCache', () => {
     const cacheDir = path.join(dir, CACHE_DIR_NAME);
     expect(fs.existsSync(cacheDir)).toBe(false);
   });
+
+  it('prune() removes entries not in active files', async () => {
+    cache.set(filePath, { symbols: [], dependencies: [] });
+    
+    const otherPath = path.join(dir, 'other.ts');
+    fs.writeFileSync(otherPath, 'export class Other {}', 'utf8');
+    cache.set(otherPath, { symbols: [], dependencies: [] });
+    await cache.flush();
+
+    cache.prune(new Set([filePath]));
+    await cache.flush();
+
+    const cache2 = new AnalysisCache(dir);
+    expect(cache2.get(filePath)).not.toBeNull();
+    expect(cache2.get(otherPath)).toBeNull();
+  });
+
+  it('detects racy git writes and forces hash validation', async () => {
+    cache.set(filePath, { symbols: [makeSymbol('Sample')], dependencies: [] });
+    await cache.flush();
+
+    // Now overwrite the file IMMEDIATELY without waiting for mtime to visibly change.
+    // We'll manually reset the file's mtime to match exactly what's in the cache.
+    // However, the content size MUST also match to trigger the "racy" path, 
+    // so we'll replace the text with something of the EXACT same length.
+    const newContent = 'export class RacySample {}'; // length 26
+    const oldContent = 'export class Sample {}    '; // length 26 (padded)
+    
+    // Actually we need to rewrite both to ensure same length
+    fs.writeFileSync(filePath, oldContent, 'utf8');
+    cache.set(filePath, { symbols: [makeSymbol('Sample')], dependencies: [] });
+    const cachedEntry = cache.get(filePath)!;
+    
+    fs.writeFileSync(filePath, newContent, 'utf8');
+    fs.utimesSync(filePath, new Date(), new Date(cachedEntry.mtimeMs)); // force exact same mtime
+
+    // A normal cache would falsely return a hit because mtime & size match.
+    // But the racy git check should see cachedAtMs is very close to mtimeMs and force hash check.
+    const cache2 = new AnalysisCache(dir);
+    expect(cache2.get(filePath)).toBeNull(); // Miss! Racy content detected
+  });
 });
 
 // ---- Codebase.analyze() integration -----------------------------------

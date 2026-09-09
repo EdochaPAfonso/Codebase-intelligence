@@ -1,6 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import * as crypto from 'crypto';
+import { fileURLToPath } from 'url';
 import type { CodeSymbol, CodeDependency } from './types.js';
 
 export const CACHE_DIR_NAME = '.codebase-intelligence-cache';
@@ -13,16 +14,19 @@ export interface CachedEntry {
   mtimeMs: number;
   /** size in bytes */
   size: number;
+  /** When this cache entry was written (for racy git detection) */
+  cachedAtMs: number;
   symbols: CodeSymbol[];
   dependencies: CodeDependency[];
 }
 
 interface CacheStore {
-  version: number;
+  version: string;
   entries: Record<string, CachedEntry>;
 }
 
-const CACHE_VERSION = 1;
+// Bump this when parser logic changes to invalidate old caches
+const CACHE_SCHEMA_VERSION = 'v2-parser';
 
 export class AnalysisCache {
   private store: CacheStore;
@@ -67,7 +71,12 @@ export class AnalysisCache {
 
     // Fast path: mtime and size match → trust the cache
     if (stat.mtimeMs === entry.mtimeMs && stat.size === entry.size) {
-      return entry;
+      // Racy git mitigation: if the file was modified very close to when it was cached,
+      // the mtime resolution might hide a subsequent quick write. Force hash check.
+      const isRacy = Math.abs(stat.mtimeMs - entry.cachedAtMs) < 2000;
+      if (!isRacy) {
+        return entry;
+      }
     }
 
     // Slow path: mtime changed (e.g. save without content change) → verify hash
@@ -86,8 +95,24 @@ export class AnalysisCache {
   public set(filePath: string, data: { symbols: CodeSymbol[]; dependencies: CodeDependency[] }): void {
     const { mtimeMs, size } = AnalysisCache.fingerprint(filePath);
     const contentHash = AnalysisCache.contentHash(filePath);
-    this.store.entries[filePath] = { contentHash, mtimeMs, size, ...data };
+    this.store.entries[filePath] = { 
+      contentHash, 
+      mtimeMs, 
+      size, 
+      cachedAtMs: Date.now(),
+      ...data 
+    };
     this.dirty = true;
+  }
+
+  /** Removes entries for files that are no longer part of the project */
+  public prune(activeFiles: Set<string>): void {
+    for (const filePath of Object.keys(this.store.entries)) {
+      if (!activeFiles.has(filePath)) {
+        delete this.store.entries[filePath];
+        this.dirty = true;
+      }
+    }
   }
 
   /** Persist updated entries to disk. No-op if nothing changed. */
@@ -101,7 +126,7 @@ export class AnalysisCache {
 
   /** Remove all cached entries for this project and delete the cache file. */
   public invalidate(): void {
-    this.store = { version: CACHE_VERSION, entries: {} };
+    this.store = { version: CACHE_SCHEMA_VERSION, entries: {} };
     this.dirty = false;
     try {
       fs.rmSync(path.dirname(this.cacheFile), { recursive: true, force: true });
@@ -116,12 +141,12 @@ export class AnalysisCache {
     try {
       const raw = fs.readFileSync(this.cacheFile, 'utf8');
       const parsed = JSON.parse(raw) as CacheStore;
-      if (parsed.version !== CACHE_VERSION) {
-        return { version: CACHE_VERSION, entries: {} };
+      if (parsed.version !== CACHE_SCHEMA_VERSION) {
+        return { version: CACHE_SCHEMA_VERSION, entries: {} };
       }
       return parsed;
     } catch {
-      return { version: CACHE_VERSION, entries: {} };
+      return { version: CACHE_SCHEMA_VERSION, entries: {} };
     }
   }
 }
