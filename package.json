@@ -1,7 +1,9 @@
 {
-  "name": "codebase-intelligence",
+  "name": "@eduardo-afonso/codebase-intelligence",
   "version": "0.1.0",
-  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Analyze and understand codebases programmatically — file scanning, symbol indexing, dependency graphs, and code search.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
