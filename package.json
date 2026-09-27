@@ -13,10 +13,12 @@
   "bin": {
     "codebase-intelligence": "./dist/cli/index.js"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-org/codebase-intelligence"
+    "url": "https://github.com/EdochaPAfonso/Codebase-intelligence"
   },
   "scripts": {
     "dev": "tsx src/index.ts",

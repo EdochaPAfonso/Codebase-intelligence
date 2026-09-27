@@ -9,3 +9,8 @@ target
 .env
 .env.*
 .DS_Store
+.AGENTS.md 
+.PROMPS_FOR_Fase.md
+
+.AGENTS
+.PROMPS_FOR_Fase
