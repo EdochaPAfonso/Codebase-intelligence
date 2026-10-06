@@ -10,4 +10,3 @@ target
 .env.*
 .DS_Store
 AGENTS.md
-PROMPTS_POR_FASE.md
