@@ -31,3 +31,10 @@ export type {
   VectorStore,
   VectorSearchResult,
 } from './context/interfaces.js';
+// Context Engine — CE-2: Implementation
+export { ContextEngine } from './context/ContextEngine.js';
+
+// Context Engine — CE-3: Strategy classes & SignatureExtractor
+export { ShallowStrategy, SignatureStrategy, DeepStrategy } from './context/strategies/index.js';
+export type { ContextBuildStrategy } from './context/strategies/index.js';
+export { SignatureExtractor } from './context/SignatureExtractor.js';

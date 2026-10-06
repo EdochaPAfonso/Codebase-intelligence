@@ -15,6 +15,7 @@ import { DependencyAnalyzer } from '../analysis/DependencyAnalyzer.js';
 import { ImpactAnalyzer } from '../analysis/ImpactAnalyzer.js';
 import type { ImpactResult } from '../analysis/ImpactAnalyzer.js';
 import { AnalysisCache } from './AnalysisCache.js';
+import { ContextEngine } from '../context/ContextEngine.js';
 
 export interface CodebaseOptions {
   ignore?: string[];
@@ -148,6 +149,32 @@ export class Codebase {
 
   public isAnalyzed(): boolean {
     return this._analyzed;
+  }
+
+  /**
+   * Returns a `ContextEngine` pre-configured with this codebase's graph,
+   * symbol index, and file index.
+   *
+   * Use the returned engine to build LLM-ready context payloads:
+   * ```ts
+   * const payload = await codebase.context().forFile('src/auth/AuthService.ts');
+   * ```
+   *
+   * @throws if called before `analyze()`.
+   */
+  public context(): ContextEngine {
+    if (!this._analyzed) {
+      throw new Error(
+        'Codebase.context() requires the codebase to be analysed first. ' +
+          'Call await codebase.analyze() before calling context().',
+      );
+    }
+    return new ContextEngine(
+      this._graph,
+      this._symbolIndex,
+      this._fileIndex,
+      this.cwd,
+    );
   }
 
   /**
