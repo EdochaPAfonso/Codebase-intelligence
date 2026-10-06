@@ -52,11 +52,26 @@ feat(diff): DI-1 - add change set types and contracts
 
 ---
 
-## 🔄 FASE DI-2 — GitChangeSetProvider
-**Estado**: Em progresso
+## ✅ FASE DI-2 — GitChangeSetProvider
+**Concluída em**: 2026-10-06
 
-### Objectivo
-Implementar `src/diff/GitChangeSetProvider.ts` usando `execFile('git', [...])` (nunca `exec` com string).
+### O que foi feito
+Implementado `GitChangeSetProvider.ts` usando `execFile('git', [...])` com tratamento robusto para Windows (resolução de caminhos curtos 8dot3 usando `fs.realpathSync.native`).
+Suporta os modos `since` (merge-base), `staged`, e `uncommitted` (com inclusão de untracked files usando `git ls-files`). Parseia a saída de forma segura com delimitadores nulos (`-z`) para lidar com nomes de ficheiros que contenham espaços.
+
+### Testes
+- **19/19** testes específicos do `GitChangeSetProvider.test.ts` passando usando repositórios Git temporários criados a quente.
+- 132/132 testes no total passando.
+
+### Commit
+```
+feat(diff): DI-2 - implement GitChangeSetProvider
+```
+
+---
+
+## 🔄 FASE DI-3 — ChangeSetImpactAnalyzer (puro)
+**Estado**: Em progresso
 
 ### Requisitos
 - [ ] Resolver raiz do repositório Git (`git rev-parse --show-toplevel`)
