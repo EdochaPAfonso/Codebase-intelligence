@@ -107,6 +107,15 @@ npx codebase-intelligence dependents "src/auth/AuthService.ts" .
 
 # View the full impact of a file
 npx codebase-intelligence impact "src/auth/AuthService.ts" .
+
+# Generate an LLM-ready context payload for a file (including dependencies)
+npx codebase-intelligence context "src/auth/AuthService.ts" --strategy signature .
+
+# Generate semantic chunks for the codebase
+npx codebase-intelligence chunks . --max-tokens 512
+
+# Estimate token usage for the entire codebase
+npx codebase-intelligence tokens .
 ```
 
 ---
@@ -125,11 +134,9 @@ For deeper architectural details, see [docs/architecture.md](docs/architecture.m
 
 ## Roadmap
 
-The current version (MVP) establishes the deterministic structural analysis of a codebase. Future versions will introduce:
+The current version establishes the deterministic structural analysis of a codebase and includes the **Context Engine** for semantic chunking and RAG pipelines. Future versions will introduce:
 
-- **AI Adapters**: Interfaces to connect external LLMs (OpenAI, Anthropic, Gemini, Ollama).
-- **RAG & Embeddings Pipeline**: Automatic chunking and vector storage integrations for semantic code search.
-- **Context Engine**: Tools to dynamically generate context payloads for LLMs based on the dependency graph.
+- **AI Adapters**: Concrete implementations to connect external LLMs (OpenAI, Anthropic, Gemini, Ollama) and Vector Stores (Qdrant, Chroma).
 - **Multi-language Support**: Expanding the `ParserRegistry` to handle Python, Go, and C#.
 
 ---

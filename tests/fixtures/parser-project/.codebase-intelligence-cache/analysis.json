@@ -1,0 +1,84 @@
+{
+  "version": "v2-parser",
+  "entries": {
+    "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/AuthService.ts": {
+      "contentHash": "1ebf87c2118a57b30040e3ed5a4f44bf4368f2de5f3f5ddf4e3e809f69ee35ad",
+      "mtimeMs": 1788945355800.568,
+      "size": 78,
+      "cachedAtMs": 1791280466540,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/AuthService.ts#AuthService",
+          "name": "AuthService",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/AuthService.ts",
+          "startLine": 1,
+          "endLine": 5
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/AuthService.ts#login",
+          "name": "login",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/AuthService.ts",
+          "startLine": 2,
+          "endLine": 4,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/AuthService.ts#AuthService"
+        }
+      ],
+      "dependencies": []
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/UserService.ts": {
+      "contentHash": "e47297468badd2b70540a4934d4d39b9ab5b5527e30ce3cd6011c9efee2ba74d",
+      "mtimeMs": 1788945550754.4016,
+      "size": 317,
+      "cachedAtMs": 1791280466553,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/UserService.ts#UserService",
+          "name": "UserService",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/UserService.ts",
+          "startLine": 7,
+          "endLine": 14
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/UserService.ts#getUser",
+          "name": "getUser",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/UserService.ts",
+          "startLine": 11,
+          "endLine": 13,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/UserService.ts#UserService"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/UserService.ts#IUser",
+          "name": "IUser",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/UserService.ts",
+          "startLine": 3,
+          "endLine": 5
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/UserService.ts#defaultUser",
+          "name": "defaultUser",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/UserService.ts",
+          "startLine": 16,
+          "endLine": 16
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/UserService.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/AuthService.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/UserService.ts#UserService",
+          "target": "IUser",
+          "type": "implements"
+        }
+      ]
+    }
+  }
+}

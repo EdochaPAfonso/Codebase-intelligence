@@ -3,9 +3,10 @@
 import { Command } from 'commander';
 import * as path from 'path';
 import * as fs from 'fs';
-import { Codebase } from '../index.js';
+import { Codebase, NoopAIProvider, type ExplainOptions } from '../index.js';
 import { CACHE_DIR_NAME } from '../core/AnalysisCache.js';
 import { Watcher } from './Watcher.js';
+import type { ContextOptions } from '../context/types.js';
 
 const program = new Command();
 
@@ -237,6 +238,88 @@ program
       } else {
         console.log('No cache found — nothing to clear.');
       }
+    } catch (err: unknown) {
+      console.error(`Error: ${(err as Error).message}`);
+      process.exit(1);
+    }
+  });
+
+program
+  .command('context')
+  .description('Generate LLM context for a specific file')
+  .argument('<file>', 'File path')
+  .argument('[path]', 'Path to the codebase', '.')
+  .option('-s, --strategy <strategy>', 'Context strategy (shallow, signature, deep)', 'signature')
+  .action(async (file, rawPath, opts) => {
+    try {
+      const targetPath = resolveTarget(rawPath);
+      const codebase = await loadAndAnalyze(targetPath);
+      const cf = findFile(codebase, file);
+      if (!cf) {
+        console.error(`Error: File "${file}" not found.`);
+        process.exit(1);
+      }
+
+      const cbAI = codebase.withAI(new NoopAIProvider());
+      const explainOpts: ExplainOptions = {};
+      if (opts.strategy) {
+        explainOpts.strategy = opts.strategy as any;
+      }
+      
+      const payload = await cbAI.buildExplainPayload(cf.path, explainOpts);
+
+      console.log(payload.prompt);
+    } catch (err: unknown) {
+      console.error(`Error: ${(err as Error).message}`);
+      process.exit(1);
+    }
+  });
+
+program
+  .command('chunks')
+  .description('Generate semantic chunks for the codebase')
+  .argument('[path]', 'Path to the codebase', '.')
+  .option('-m, --max-tokens <number>', 'Max tokens per chunk', '512')
+  .option('-f, --format <format>', 'Output format (json, pretty)', 'json')
+  .action(async (rawPath, opts) => {
+    try {
+      const targetPath = resolveTarget(rawPath);
+      const codebase = await loadAndAnalyze(targetPath);
+      
+      const maxChunkTokens = parseInt(opts.maxTokens, 10);
+      const chunks = await codebase.chunks({ maxChunkTokens });
+
+      if (opts.format === 'json') {
+        printJson(chunks);
+      } else {
+        chunks.forEach((c, i) => {
+          console.log(`\n--- Chunk ${i + 1} | ${c.id} | ~${c.tokenEstimate} tokens ---`);
+          console.log(c.content);
+        });
+      }
+    } catch (err: unknown) {
+      console.error(`Error: ${(err as Error).message}`);
+      process.exit(1);
+    }
+  });
+
+program
+  .command('tokens')
+  .description('Estimate tokens for the codebase')
+  .argument('[path]', 'Path to the codebase', '.')
+  .action(async (rawPath) => {
+    try {
+      const targetPath = resolveTarget(rawPath);
+      const codebase = await loadAndAnalyze(targetPath);
+      
+      const chunks = await codebase.chunks();
+      const totalTokens = chunks.reduce((acc, c) => acc + c.tokenEstimate, 0);
+
+      printJson({
+        files: codebase.files().length,
+        chunks: chunks.length,
+        estimatedTokens: totalTokens,
+      });
     } catch (err: unknown) {
       console.error(`Error: ${(err as Error).message}`);
       process.exit(1);

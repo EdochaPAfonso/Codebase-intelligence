@@ -15,7 +15,7 @@ CE-3  ✅  Estratégias Formais (Shallow / Signature / Deep via ts-morph)
 CE-4  ✅  AI Provider Interface (explain, ask)
 CE-5  ✅  Semantic Chunker
 CE-6  ✅  EmbeddingProvider + VectorStore Abstractions
-CE-7  ⬜  Integração, CLI & Testes E2E
+CE-7  ✅  Integração, CLI & Testes E2E
 ```
 
 ---
@@ -494,11 +494,11 @@ export { RAGPipeline } from './ai/RAGPipeline.js';
 
 ### Critérios de done
 
-- [ ] `npm run build` sem erros
-- [ ] Todos os comandos CLI funcionam
-- [ ] Testes E2E passam com o projecto `examples/`
-- [ ] `tsc --noEmit` sem erros
-- [ ] README actualizado com exemplos do Context Engine
+- [x] `npm run build` sem erros
+- [x] Todos os comandos CLI funcionam
+- [x] Testes E2E passam com o projecto `examples/`
+- [x] `tsc --noEmit` sem erros
+- [x] README actualizado com exemplos do Context Engine
 
 ---
 
