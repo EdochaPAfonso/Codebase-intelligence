@@ -51,3 +51,19 @@ export type { SemanticChunk, ChunkerOptions } from './context/SemanticChunker.js
 // Context Engine — CE-6: EmbeddingProvider + VectorStore Abstractions
 export { RAGPipeline } from './ai/RAGPipeline.js';
 export type { RAGPipelineOptions } from './ai/RAGPipeline.js';
+
+// Diff Impact — DI-1: Types & contracts
+export type {
+  FileChange,
+  ChangeStatus,
+  ChangeSetOptions,
+  ChangeSetProvider,
+  UnanalyzableReason,
+  ChangeSetImpact,
+} from './diff/types.js';
+export {
+  GitNotAvailableError,
+  NotAGitRepositoryError,
+  InvalidGitRefError,
+  GitCommandError,
+} from './diff/errors.js';
