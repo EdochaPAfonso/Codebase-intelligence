@@ -92,47 +92,59 @@ feat(diff): DI-3 - implement ChangeSetImpactAnalyzer
 
 ---
 
-## 🔄 FASE DI-4 — Integração na API `Codebase`
+## ✅ FASE DI-4 — Integração na API `Codebase`
+**Concluída em**: 2026-10-06
+
+### O que foi feito
+- Adicionado `impactOfFiles(paths: string[]): ChangeSetImpact` — análise pura e síncrona sem Git
+- Adicionado `impactOfChanges(options?, provider?): Promise<ChangeSetImpact>` — com `GitChangeSetProvider` por defeito, provider injectável para testes
+- Ambos os métodos lançam erro se chamados antes de `analyze()`
+- Exportados `GitChangeSetProvider` e `ChangeSetImpactAnalyzer` no `src/index.ts`
+
+### Testes
+- `CodebaseImpact.test.ts` — 5/5 testes de integração com repositório Git temporário
+- 165/165 total a passar, `typecheck` limpo
+
+### Commit
+```
+feat(diff): DI-4 - integrate diff impact into Codebase API
+```
+
+---
+
+## ✅ FASE DI-5 — CLI
+**Concluída em**: 2026-10-06
+
+### O que foi feito
+Extendido o comando `impact` mantendo retrocompatibilidade total:
+
+```bash
+# Modo ficheiro (inalterado):
+codebase-intelligence impact src/auth/AuthService.ts .
+
+# Modo Git diff (novo):
+codebase-intelligence impact . --since main
+codebase-intelligence impact . --staged
+codebase-intelligence impact . --uncommitted
+codebase-intelligence impact . --since main --format json
+codebase-intelligence impact . --since main --tests-only
+```
+
+- `--since`, `--staged`, `--uncommitted` mutuamente exclusivos (validação com saída `1`)
+- `--format text|json` — JSON limpo em stdout, texto legível por defeito
+- `--tests-only` — imprime caminhos de testes um por linha
+- Output de texto inclui aviso de granularidade + secções agrupadas
+
+### Commit
+```
+feat(diff): DI-5 - extend impact CLI with diff-mode options
+```
+
+---
+
+## 🔄 FASE DI-6 — Documentação & Exemplo CI
 **Estado**: Em progresso
 
-### Objectivo
-```ts
-const impact = await codebase.impactOfChanges({ since: 'main' });
-const pure = codebase.impactOfFiles(['src/auth/AuthService.ts']);
-```
-
-### Requisitos
-- [ ] `impactOfChanges(options, provider?)` — provider injectável
-- [ ] `impactOfFiles(paths)` — análise pura sem Git
-- [ ] Exigir `analyze()` antes (erro consistente com o resto da API)
-- [ ] Testes de integração com repositório Git temporário + fixture TypeScript
-
----
-
-## ⬜ FASE DI-5 — CLI
-**Estado**: Aguarda DI-4
-
-### Objectivo
-```bash
-codebase-intelligence impact --since main .
-codebase-intelligence impact --staged .
-codebase-intelligence impact --uncommitted .
-codebase-intelligence impact --since main --format json .
-codebase-intelligence impact --since main --tests-only .
-```
-
-### Requisitos
-- [ ] `impact <file>` continua a funcionar (retrocompatibilidade)
-- [ ] `<file>` e `--since/--staged/--uncommitted` mutuamente exclusivos
-- [ ] `--format text|json` (JSON limpo em stdout, diagnósticos em stderr)
-- [ ] `--tests-only` imprime caminhos de testes um por linha
-- [ ] Output de texto agrupado com aviso de granularidade
-- [ ] Códigos de saída: `0` sucesso, `1` erro
-
----
-
-## ⬜ FASE DI-6 — Documentação & Exemplo CI
-**Estado**: Aguarda DI-5
 
 ### Objectivo
 - [ ] `README.md` + `README.pt-BR.md` — nova secção API + CLI
