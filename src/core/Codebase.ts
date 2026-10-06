@@ -16,6 +16,8 @@ import { ImpactAnalyzer } from '../analysis/ImpactAnalyzer.js';
 import type { ImpactResult } from '../analysis/ImpactAnalyzer.js';
 import { AnalysisCache } from './AnalysisCache.js';
 import { ContextEngine } from '../context/ContextEngine.js';
+import { SemanticChunker } from '../context/SemanticChunker.js';
+import type { SemanticChunk, ChunkerOptions } from '../context/SemanticChunker.js';
 import { CodebaseWithAI } from '../ai/CodebaseWithAI.js';
 import type { AIProvider } from '../context/interfaces.js';
 
@@ -199,6 +201,22 @@ export class Codebase {
       );
     }
     return new CodebaseWithAI(this, provider);
+  }
+
+  /**
+   * Dividir ficheiros em chunks semânticos (baseados em AST, não em caracteres).
+   * 
+   * @throws se chamado antes de `analyze()`.
+   */
+  public async chunks(options?: ChunkerOptions): Promise<SemanticChunk[]> {
+    if (!this._analyzed) {
+      throw new Error(
+        'Codebase.chunks() requires the codebase to be analysed first. ' +
+          'Call await codebase.analyze() before calling chunks().',
+      );
+    }
+    const chunker = new SemanticChunker();
+    return chunker.chunk(this._files, options);
   }
 
   /**

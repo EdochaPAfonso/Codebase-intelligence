@@ -43,3 +43,7 @@ export { SignatureExtractor } from './context/SignatureExtractor.js';
 export { NoopAIProvider } from './ai/providers/NoopAIProvider.js';
 export { CodebaseWithAI } from './ai/CodebaseWithAI.js';
 export type { ExplainOptions, AskOptions } from './ai/CodebaseWithAI.js';
+
+// Context Engine — CE-5: Semantic Chunker
+export { SemanticChunker } from './context/SemanticChunker.js';
+export type { SemanticChunk, ChunkerOptions } from './context/SemanticChunker.js';
