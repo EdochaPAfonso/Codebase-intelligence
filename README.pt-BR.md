@@ -25,7 +25,7 @@ O Codebase Intelligence funciona como um "Grafo de Conhecimento" fundamental par
 ## Instalação
 
 ```bash
-npm install codebase-intelligence
+npm i @eduardo-afonso/codebase-intelligence
 ```
 
 *(Nota: Atualmente em fase de MVP. Certifique-se de que seu projeto tenha o TypeScript configurado para uso adequado).*

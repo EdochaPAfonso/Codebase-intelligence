@@ -25,7 +25,7 @@ Codebase Intelligence acts as a foundational "Knowledge Graph" for your code. It
 ## Installation
 
 ```bash
-npm install codebase-intelligence
+npm i @eduardo-afonso/codebase-intelligence
 ```
 
 *(Note: Currently in MVP phase. Ensure your project has TypeScript setup to use properly).*
