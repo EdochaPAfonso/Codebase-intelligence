@@ -70,52 +70,30 @@ feat(diff): DI-2 - implement GitChangeSetProvider
 
 ---
 
-## 🔄 FASE DI-3 — ChangeSetImpactAnalyzer (puro)
+## ✅ FASE DI-3 — ChangeSetImpactAnalyzer (puro)
+**Concluída em**: 2026-10-06
+
+### O que foi feito
+- Implementado o `ChangeSetImpactAnalyzer` que actua como cola entre as mudanças de ficheiros (`FileChange[]`) e o `DependencyGraph`.
+- Usa o `ImpactAnalyzer` base para evitar duplicação da travessia em grafo.
+- Identifica correctamente as razões de `unanalyzable` (`outside-codebase`, `unsupported-language`, `not-in-index`, `deleted-unprovable`).
+- Agrupa directos vs indirectos com a precedência correcta e filtra os próprios ficheiros modificados do conjunto resultante.
+- Exibe specifiers não resolvidos a partir de ficheiros alterados como diagnóstico.
+
+### Testes
+- Adicionado `ChangeSetImpactAnalyzer.test.ts` com um grafo e index falsos (`mock`).
+- 9/9 testes de unidade focados na lógica pura de correlação e agrupamento.
+- 160/160 no total a passar, `typecheck` limpo.
+
+### Commit
+```
+feat(diff): DI-3 - implement ChangeSetImpactAnalyzer
+```
+
+---
+
+## 🔄 FASE DI-4 — Integração na API `Codebase`
 **Estado**: Em progresso
-
-### Requisitos
-- [ ] Resolver raiz do repositório Git (`git rev-parse --show-toplevel`)
-- [ ] Converter caminhos para relativos à raiz da codebase; fora → `outside-codebase`
-- [ ] `git diff --name-status -M -z` (NUL-delimited, suporta espaços em nomes)
-- [ ] Suportar modos: `since` (merge-base, três pontos), `staged`, `uncommitted`, default
-- [ ] Incluir untracked files no modo `uncommitted` (`git ls-files --others --exclude-standard -z`)
-- [ ] Tratar `R<score>`, `C<score>`, `T`, `D`, `A`, `M`
-- [ ] Validar refs (rejeitar vazias, que comecem com `-`, verificar existência com `rev-parse --verify`)
-- [ ] Detectar clone raso e lançar erro acionável
-- [ ] Detectar opções conflitantes
-- [ ] Output ordenado por `path` (determinismo)
-- [ ] Testes com repositórios Git temporários reais
-
-### Ficheiros a criar
-| Ficheiro | Descrição |
-|---|---|
-| `src/diff/GitChangeSetProvider.ts` | Implementação |
-| `tests/diff/GitChangeSetProvider.test.ts` | Testes |
-
----
-
-## ⬜ FASE DI-3 — ChangeSetImpactAnalyzer (puro)
-**Estado**: Aguarda DI-2
-
-### Objectivo
-Analisador puro que combina `FileChange[]` com o grafo de dependências.
-
-### Requisitos
-- [ ] Reutilizar `ImpactAnalyzer` por ficheiro (não duplicar travessia do grafo)
-- [ ] União de direct/indirect/tests sem duplicados
-- [ ] Prioridade: direct > indirect
-- [ ] Excluir os próprios ficheiros alterados de `direct`/`indirect`
-- [ ] Tratar `renamed` (analisar novo caminho; antigo só se o grafo provar)
-- [ ] Tratar `deleted` (só reportar se o grafo tiver edges `unresolved` correspondentes)
-- [ ] `globalChanges` — lista de padrões configurável em constante
-- [ ] `unsupported-language`, `not-in-index` → `unanalyzable`
-- [ ] Expor `codebase.impactOfFiles(paths)` para uso puro sem Git
-- [ ] Testes com fixture pequena e grafo conhecido
-
----
-
-## ⬜ FASE DI-4 — Integração na API `Codebase`
-**Estado**: Aguarda DI-3
 
 ### Objectivo
 ```ts

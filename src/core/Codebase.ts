@@ -20,6 +20,9 @@ import { SemanticChunker } from '../context/SemanticChunker.js';
 import type { SemanticChunk, ChunkerOptions } from '../context/SemanticChunker.js';
 import { CodebaseWithAI } from '../ai/CodebaseWithAI.js';
 import type { AIProvider } from '../context/interfaces.js';
+import { GitChangeSetProvider } from '../diff/GitChangeSetProvider.js';
+import { ChangeSetImpactAnalyzer } from '../diff/ChangeSetImpactAnalyzer.js';
+import type { ChangeSetOptions, ChangeSetProvider, ChangeSetImpact, FileChange } from '../diff/types.js';
 
 export interface CodebaseOptions {
   ignore?: string[];
@@ -149,6 +152,66 @@ export class Codebase {
 
   public impact(file: string): ImpactResult {
     return new ImpactAnalyzer(this._graph).impact(file);
+  }
+
+  /**
+   * Analyzes the impact of a specific list of files without querying a VCS.
+   * Treats all given files as 'modified'.
+   * 
+   * @throws if called before `analyze()`.
+   */
+  public impactOfFiles(paths: string[]): ChangeSetImpact {
+    if (!this._analyzed) {
+      throw new Error(
+        'Codebase.impactOfFiles() requires the codebase to be analysed first. ' +
+          'Call await codebase.analyze() before calling impactOfFiles().',
+      );
+    }
+    const changes: FileChange[] = paths.map(p => ({
+      path: p,
+      status: 'modified',
+    }));
+    
+    const analyzer = new ChangeSetImpactAnalyzer(this._graph, this._fileIndex, this.cwd);
+    return {
+      changed: changes,
+      ...analyzer.analyze(changes),
+      metadata: { granularity: 'file' },
+    };
+  }
+
+  /**
+   * Analyzes the impact of a set of changes obtained from a `ChangeSetProvider`.
+   * Defaults to querying the local Git repository for changes.
+   * 
+   * @throws if called before `analyze()`.
+   */
+  public async impactOfChanges(
+    options?: ChangeSetOptions,
+    provider?: ChangeSetProvider,
+  ): Promise<ChangeSetImpact> {
+    if (!this._analyzed) {
+      throw new Error(
+        'Codebase.impactOfChanges() requires the codebase to be analysed first. ' +
+          'Call await codebase.analyze() before calling impactOfChanges().',
+      );
+    }
+    
+    const actualProvider = provider ?? new GitChangeSetProvider(this.cwd);
+    const changes = await actualProvider.getChanges(options);
+    
+    const metadata: { granularity: 'file'; base?: string; head?: string } = {
+      granularity: 'file'
+    };
+    if (options?.since !== undefined) metadata.base = options.since;
+    if (options?.until !== undefined) metadata.head = options.until;
+
+    const analyzer = new ChangeSetImpactAnalyzer(this._graph, this._fileIndex, this.cwd);
+    return {
+      changed: changes,
+      ...analyzer.analyze(changes),
+      metadata,
+    };
   }
 
   public isAnalyzed(): boolean {
