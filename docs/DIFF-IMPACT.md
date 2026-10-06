@@ -142,28 +142,27 @@ feat(diff): DI-5 - extend impact CLI with diff-mode options
 
 ---
 
-## 🔄 FASE DI-6 — Documentação & Exemplo CI
-**Estado**: Em progresso
+## ✅ FASE DI-6 — Documentação & Exemplo CI
+**Concluída em**: 2026-10-06
 
-
-### Objectivo
-- [ ] `README.md` + `README.pt-BR.md` — nova secção API + CLI
-- [ ] `docs/architecture.md` — onde a feature se encaixa + limitações conhecidas
-- [ ] `docs/` ou `examples/` — exemplo GitHub Actions com `fetch-depth: 0`
-- [ ] `CHANGELOG.md` — entrada da feature
-- [ ] Validar o fluxo do exemplo manualmente
+### O que foi feito
+- [x] `README.md` + `README.pt-BR.md` — nova secção API + CLI
+- [x] `docs/architecture.md` — onde a feature se encaixa + limitações conhecidas
+- [x] `docs/` ou `examples/` — exemplo GitHub Actions com `fetch-depth: 0`
+- [x] `CHANGELOG.md` — entrada da feature
+- [x] Validar o fluxo do exemplo manualmente
 
 ---
 
 ## Critérios Finais (MVP)
 
-- [ ] `npm run build`, `npm run typecheck`, `npm run test:run` sem erros
-- [ ] `codebase-intelligence impact --since main .` funciona num repositório real
-- [ ] Nenhuma nova dependência em `package.json`
-- [ ] Saída determinística e `--format json` limpo em stdout
-- [ ] `globalChanges` e `unanalyzable` sempre reportados
-- [ ] `granularity: "file"` presente no resultado e avisado no texto da CLI
-- [ ] README inglês e português actualizados
+- [x] `npm run build`, `npm run typecheck`, `npm run test:run` sem erros
+- [x] `codebase-intelligence impact --since main .` funciona num repositório real
+- [x] Nenhuma nova dependência em `package.json`
+- [x] Saída determinística e `--format json` limpo em stdout
+- [x] `globalChanges` e `unanalyzable` sempre reportados
+- [x] `granularity: "file"` presente no resultado e avisado no texto da CLI
+- [x] README inglês e português actualizados
 
 ---
 

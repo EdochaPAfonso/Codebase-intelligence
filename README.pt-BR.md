@@ -16,6 +16,8 @@ O Codebase Intelligence funciona como um "Grafo de Conhecimento" fundamental par
 - **Grafo de Dependências**: Constrói um grafo direcionado de imports, `extends` e `implements`.
 - **Busca de Código**: Busca léxica e estrutural em arquivos e símbolos.
 - **Análise de Impacto**: Entenda as consequências diretas e indiretas de modificar qualquer arquivo, incluindo arquivos de teste relacionados.
+- **Análise de Impacto de Diferenças (Diff Impact)**: Dado um conjunto de alterações no Git (um branch, arquivos em stage, edições não commitadas), descubra *"o que este conjunto de mudanças afeta?"* — de forma conservadora, na granularidade do arquivo, sem inventar relações.
+- **Context Engine**: Crie payloads de contexto prontos para LLMs, com controle de tokens, usando três estratégias (shallow, signature, deep).
 - **CLI Incluída**: Execute análises e consultas diretamente pelo terminal.
 
 ---
@@ -86,6 +88,52 @@ Retorna os arquivos que dependem diretamente do arquivo informado.
 ### `codebase.impact(file: string): ImpactResult`
 Retorna `{ direct: string[], indirect: string[], tests: string[] }`, revelando o raio de impacto completo de uma alteração no arquivo informado.
 
+### `codebase.impactOfFiles(paths: string[]): ChangeSetImpact`
+Análise de impacto pura e síncrona sem consultar o Git. Trata todos os caminhos relativos fornecidos como `modificados` e resolve as suas dependências através do grafo.
+
+```typescript
+// O que é afetado se alterar utils.ts?
+const impact = codebase.impactOfFiles(['src/utils.ts']);
+console.log(impact.direct);          // importadores diretos
+console.log(impact.indirect);        // dependentes transitivos
+console.log(impact.tests);           // arquivos de teste (por convenção)
+console.log(impact.globalChanges);   // arquivos globais (afetam tudo)
+console.log(impact.unanalyzable);    // arquivos não indexados e porquê
+```
+
+### `codebase.impactOfChanges(options?, provider?): Promise<ChangeSetImpact>`
+Consulta um `ChangeSetProvider` (Git por defeito) para determinar quais os arquivos alterados, mapeando-os para um `ChangeSetImpact`.
+
+```typescript
+// Alterações introduzidas pela branch atual vs main:
+const impact = await codebase.impactOfChanges({ since: 'main' });
+
+// Apenas arquivos em stage:
+const staged = await codebase.impactOfChanges({ staged: true });
+
+// Todas as alterações não commitadas (incluindo arquivos untracked):
+const uncommitted = await codebase.impactOfChanges();
+
+// Provider personalizado (ex: API de PR do GitHub, mock de teste):
+const impact = await codebase.impactOfChanges({}, meuProvider);
+```
+
+**Formato de `ChangeSetImpact`:**
+```typescript
+{
+  changed: FileChange[];               // lista bruta do provider
+  direct: string[];                    // arquivos que importam um arquivo alterado
+  indirect: string[];                  // dependentes transitivos (excluindo direct)
+  tests: string[];                     // arquivos de teste por convenção de nomes
+  globalChanges: string[];             // ex: package.json, tsconfig.json
+  unanalyzable: { path, reason }[];    // arquivos não rastreáveis
+  unresolvedDependencies: string[];    // imports impossíveis de resolver
+  metadata: { granularity: 'file'; base?: string; head?: string };
+}
+```
+
+> ⚠️ **Nota sobre granularidade**: a análise opera na **granularidade de arquivo**. Uma alteração de uma linha marca *todos* os dependentes desse arquivo como potencialmente afetados. O resultado é um limite superior conservador.
+
 ---
 
 ## Referência da CLI
@@ -105,8 +153,27 @@ npx codebase-intelligence dependencies "src/auth/AuthService.ts" .
 # Exibe o que depende de um arquivo
 npx codebase-intelligence dependents "src/auth/AuthService.ts" .
 
-# Exibe o impacto completo de um arquivo
-npx codebase-intelligence impact "src/auth/AuthService.ts" .
+# ── Análise de Impacto ──────────────────────────────────────────────────
+
+# Modo de arquivo clássico: impacto de um único arquivo
+npx codebase-intelligence impact src/auth/AuthService.ts .
+
+# Modo Diff: o que afetam as mudanças desde a branch main? (comparação merge-base)
+npx codebase-intelligence impact . --since main
+
+# Modo Diff: apenas arquivos em stage
+npx codebase-intelligence impact . --staged
+
+# Modo Diff: todas as alterações não commitadas + arquivos untracked
+npx codebase-intelligence impact . --uncommitted
+
+# Saída em JSON (limpo em stdout, ideal para scripts)
+npx codebase-intelligence impact . --since main --format json
+
+# Imprime apenas caminhos de testes relacionados — útil em CI
+npx codebase-intelligence impact . --since main --tests-only
+
+# ── Context Engine & Chunking ────────────────────────────────────────────
 
 # Gera um payload de contexto pronto para LLMs para um arquivo (incluindo dependências)
 npx codebase-intelligence context "src/auth/AuthService.ts" --strategy signature .
@@ -134,10 +201,12 @@ Para detalhes arquiteturais mais profundos, veja [docs/architecture.md](docs/arc
 
 ## Roadmap
 
-A versão atual estabelece a análise estrutural determinística de uma base de código e inclui o **Context Engine** para chunking semântico e pipelines de RAG. Versões futuras irão introduzir:
+A versão atual estabelece a análise estrutural determinística de uma base de código, inclui o **Context Engine** para chunking semântico e pipelines de RAG, e agora inclui **Análise de Impacto de Diferenças (Diff Impact)** para as alterações no Git. Versões futuras irão introduzir:
 
 - **Adaptadores de IA**: Implementações concretas para conectar LLMs externos (OpenAI, Anthropic, Gemini, Ollama) e Vector Stores (Qdrant, Chroma).
 - **Suporte Multi-linguagem**: Expansão do `ParserRegistry` para suportar Python, Go e C#.
+- **Granularidade a nível de Símbolo**: Reduzindo a análise de impacto ao nível do arquivo para os símbolos especificamente alterados.
+- **Indexação Incremental**: Evita a re-análise completa a cada execução detetando arquivos alterados da cache.
 
 ---
 

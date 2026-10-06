@@ -17,12 +17,12 @@ The vision for `codebase-intelligence` is to build a robust, AI-ready foundation
                      v
              DEPENDENCY GRAPH
                      |
-          ┌──────────┼──────────┐
-          v          v          v
-       SEARCH      IMPACT      FLOW
-          │          │          │
-          └──────────┼──────────┘
-                     v
+         ┌──────────┼──────────┐
+         v          v          v
+      SEARCH   DIFF IMPACT    FLOW
+         │          │          │
+         └──────────┼──────────┘
+                    v
               CONTEXT ENGINE          ← Implemented ✅
              ┌───────┴────────┐
              v                v
@@ -65,6 +65,7 @@ The vision for `codebase-intelligence` is to build a robust, AI-ready foundation
 - **FileIndex & SymbolIndex**: Fast, O(1) or O(N) lookup tables for files and code symbols. Completely decoupled from the parser implementations.
 - **DependencyGraph**: A generic, directed graph mapping relationships (imports, extends, implements) between IDs.
 - **Analyzers (Impact & Dependency)**: Wrappers around the graph that answer complex questions (e.g., "What is the transitive impact of changing this file?").
+- **Diff Impact Analyzer**: Correlates Git `ChangeSetProvider` output with the Dependency Graph to determine the structural blast radius of branch changes, staged files, or uncommitted edits.
 
 ## 4. Context Engine Layer ✅ Implemented
 **Goal**: Transform raw Knowledge Layer data into structured, token-budgeted context payloads suitable for LLMs and RAG pipelines.

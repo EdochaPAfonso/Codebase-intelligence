@@ -16,6 +16,8 @@ Codebase Intelligence acts as a foundational "Knowledge Graph" for your code. It
 - **Dependency Graph**: Builds a directed graph of imports, `extends`, and `implements`.
 - **Code Search**: Lexical and structural search across files and symbols.
 - **Impact Analysis**: Understand the direct and indirect consequences of modifying any given file, including related test files.
+- **Diff Impact Analysis**: Given Git changes (a branch, staged files, uncommitted edits), answer *"what does this set of changes affect?"* — conservatively, at file granularity, without inventing relationships.
+- **Context Engine**: Build token-budgeted, LLM-ready context payloads using three strategies (shallow, signature, deep).
 - **CLI Included**: Run analyses and queries directly from your terminal.
 
 ---
@@ -86,6 +88,51 @@ Returns files that directly depend on the target file.
 ### `codebase.impact(file: string): ImpactResult`
 Returns `{ direct: string[], indirect: string[], tests: string[] }`, revealing the full blast radius of a change to the given file.
 
+### `codebase.impactOfFiles(paths: string[]): ChangeSetImpact`
+Pure, synchronous impact analysis without querying Git. Treats all given relative paths as `modified` and resolves their dependents from the graph.
+
+```typescript
+const impact = codebase.impactOfFiles(['src/auth/AuthService.ts']);
+console.log(impact.direct);          // direct importers
+console.log(impact.indirect);        // transitive dependents
+console.log(impact.tests);           // test files (by naming convention)
+console.log(impact.globalChanges);   // config files that affect everything
+console.log(impact.unanalyzable);    // files that couldn't be traced + why
+```
+
+### `codebase.impactOfChanges(options?, provider?): Promise<ChangeSetImpact>`
+Queries a `ChangeSetProvider` (Git by default) to determine which files changed, then maps that to a `ChangeSetImpact`.
+
+```typescript
+// Changes introduced by the current branch vs main:
+const impact = await codebase.impactOfChanges({ since: 'main' });
+
+// Only staged changes:
+const staged = await codebase.impactOfChanges({ staged: true });
+
+// All uncommitted changes (including untracked files):
+const uncommitted = await codebase.impactOfChanges();
+
+// Custom provider (e.g. GitHub PR API, test stub):
+const impact = await codebase.impactOfChanges({}, myCustomProvider);
+```
+
+**`ChangeSetImpact` shape:**
+```typescript
+{
+  changed: FileChange[];               // raw list from the provider
+  direct: string[];                    // files that directly import a changed file
+  indirect: string[];                  // transitive dependents (minus direct)
+  tests: string[];                     // test files by naming convention
+  globalChanges: string[];             // e.g. package.json, tsconfig.json
+  unanalyzable: { path, reason }[];    // files that couldn't be traced
+  unresolvedDependencies: string[];    // unresolvable import specifiers
+  metadata: { granularity: 'file'; base?: string; head?: string };
+}
+```
+
+> ⚠️ **Granularity note**: the analysis operates at **file granularity**. A one-line change marks *all* dependents of that file as potentially affected. The result is a conservative upper bound.
+
 ---
 
 ## CLI Reference
@@ -105,8 +152,27 @@ npx codebase-intelligence dependencies "src/auth/AuthService.ts" .
 # View what depends on a file
 npx codebase-intelligence dependents "src/auth/AuthService.ts" .
 
-# View the full impact of a file
-npx codebase-intelligence impact "src/auth/AuthService.ts" .
+# ── Impact Analysis ─────────────────────────────────────────────────────
+
+# Classic file-mode: impact of a single file
+npx codebase-intelligence impact src/auth/AuthService.ts .
+
+# Diff mode: what does changing since main affect? (merge-base comparison)
+npx codebase-intelligence impact . --since main
+
+# Diff mode: only staged changes
+npx codebase-intelligence impact . --staged
+
+# Diff mode: all uncommitted changes + untracked files
+npx codebase-intelligence impact . --uncommitted
+
+# Output as JSON (clean on stdout, suitable for piping)
+npx codebase-intelligence impact . --since main --format json
+
+# Print only related test paths — useful in CI scripts
+npx codebase-intelligence impact . --since main --tests-only
+
+# ── Context & Chunking ───────────────────────────────────────────────────
 
 # Generate an LLM-ready context payload for a file (including dependencies)
 npx codebase-intelligence context "src/auth/AuthService.ts" --strategy signature .
@@ -134,10 +200,12 @@ For deeper architectural details, see [docs/architecture.md](docs/architecture.m
 
 ## Roadmap
 
-The current version establishes the deterministic structural analysis of a codebase and includes the **Context Engine** for semantic chunking and RAG pipelines. Future versions will introduce:
+The current version establishes the deterministic structural analysis of a codebase, includes the **Context Engine** for semantic chunking and RAG pipelines, and now features **Diff Impact Analysis** for Git change sets. Future versions will introduce:
 
 - **AI Adapters**: Concrete implementations to connect external LLMs (OpenAI, Anthropic, Gemini, Ollama) and Vector Stores (Qdrant, Chroma).
 - **Multi-language Support**: Expanding the `ParserRegistry` to handle Python, Go, and C#.
+- **Symbol-level Granularity**: Narrowing impact analysis from file-level to the specific changed symbols.
+- **Incremental Indexing**: Avoid full re-analysis on every run by detecting changed files from the index cache.
 
 ---
 

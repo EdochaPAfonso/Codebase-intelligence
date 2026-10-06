@@ -1,0 +1,44 @@
+name: CI Impact Analysis
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  analyze-impact:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # fetch-depth: 0 is REQUIRED for codebase-intelligence to compare with the base branch
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build codebase (if needed by your TS configuration)
+        run: npm run build
+
+      - name: Run Impact Analysis
+        # We compare the current PR branch against the target base branch (e.g., origin/main)
+        run: |
+          echo "Analyzing impact against origin/${{ github.base_ref }}..."
+          npx codebase-intelligence impact . --since origin/${{ github.base_ref }}
+          
+      - name: Run Related Tests Only
+        # Uses --tests-only and piping to run only the test files affected by this PR
+        run: |
+          TEST_FILES=$(npx codebase-intelligence impact . --since origin/${{ github.base_ref }} --tests-only | tr '\n' ' ')
+          
+          if [ -z "$TEST_FILES" ]; then
+            echo "No test files affected by this PR."
+          else
+            echo "Running tests for affected files: $TEST_FILES"
+            npx vitest run $TEST_FILES
+          fi
