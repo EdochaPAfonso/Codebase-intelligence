@@ -14,7 +14,7 @@ CE-2  ✅  FileContextBuilder + ContextEngine
 CE-3  ✅  Estratégias Formais (Shallow / Signature / Deep via ts-morph)
 CE-4  ✅  AI Provider Interface (explain, ask)
 CE-5  ✅  Semantic Chunker
-CE-6  ⬜  EmbeddingProvider + VectorStore Abstractions
+CE-6  ✅  EmbeddingProvider + VectorStore Abstractions
 CE-7  ⬜  Integração, CLI & Testes E2E
 ```
 

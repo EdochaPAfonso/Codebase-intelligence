@@ -47,3 +47,7 @@ export type { ExplainOptions, AskOptions } from './ai/CodebaseWithAI.js';
 // Context Engine — CE-5: Semantic Chunker
 export { SemanticChunker } from './context/SemanticChunker.js';
 export type { SemanticChunk, ChunkerOptions } from './context/SemanticChunker.js';
+
+// Context Engine — CE-6: EmbeddingProvider + VectorStore Abstractions
+export { RAGPipeline } from './ai/RAGPipeline.js';
+export type { RAGPipelineOptions } from './ai/RAGPipeline.js';
