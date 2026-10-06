@@ -16,6 +16,8 @@ import { ImpactAnalyzer } from '../analysis/ImpactAnalyzer.js';
 import type { ImpactResult } from '../analysis/ImpactAnalyzer.js';
 import { AnalysisCache } from './AnalysisCache.js';
 import { ContextEngine } from '../context/ContextEngine.js';
+import { CodebaseWithAI } from '../ai/CodebaseWithAI.js';
+import type { AIProvider } from '../context/interfaces.js';
 
 export interface CodebaseOptions {
   ignore?: string[];
@@ -175,6 +177,28 @@ export class Codebase {
       this._fileIndex,
       this.cwd,
     );
+  }
+
+  /**
+   * Returns a `CodebaseWithAI` instance that pairs this codebase with the
+   * given AI provider, exposing the `explain` and `ask` high-level APIs.
+   *
+   * ```ts
+   * const answer = await codebase
+   *   .withAI(new OpenAIProvider())
+   *   .ask('Como funciona a autenticação?');
+   * ```
+   *
+   * @throws if called before `analyze()`.
+   */
+  public withAI(provider: AIProvider): CodebaseWithAI {
+    if (!this._analyzed) {
+      throw new Error(
+        'Codebase.withAI() requires the codebase to be analysed first. ' +
+          'Call await codebase.analyze() before calling withAI().',
+      );
+    }
+    return new CodebaseWithAI(this, provider);
   }
 
   /**

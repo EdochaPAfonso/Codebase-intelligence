@@ -38,3 +38,8 @@ export { ContextEngine } from './context/ContextEngine.js';
 export { ShallowStrategy, SignatureStrategy, DeepStrategy } from './context/strategies/index.js';
 export type { ContextBuildStrategy } from './context/strategies/index.js';
 export { SignatureExtractor } from './context/SignatureExtractor.js';
+
+// Context Engine — CE-4: AI Provider Interface
+export { NoopAIProvider } from './ai/providers/NoopAIProvider.js';
+export { CodebaseWithAI } from './ai/CodebaseWithAI.js';
+export type { ExplainOptions, AskOptions } from './ai/CodebaseWithAI.js';
