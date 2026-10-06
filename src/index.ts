@@ -67,3 +67,6 @@ export {
   InvalidGitRefError,
   GitCommandError,
 } from './diff/errors.js';
+// Diff Impact — DI-2 & DI-3: Provider & Analyzer
+export { GitChangeSetProvider } from './diff/GitChangeSetProvider.js';
+export { ChangeSetImpactAnalyzer } from './diff/ChangeSetImpactAnalyzer.js';

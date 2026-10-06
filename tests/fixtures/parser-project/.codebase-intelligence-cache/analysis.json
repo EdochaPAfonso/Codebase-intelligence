@@ -5,7 +5,7 @@
       "contentHash": "1ebf87c2118a57b30040e3ed5a4f44bf4368f2de5f3f5ddf4e3e809f69ee35ad",
       "mtimeMs": 1788945355800.568,
       "size": 78,
-      "cachedAtMs": 1791288996321,
+      "cachedAtMs": 1791289331101,
       "symbols": [
         {
           "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/AuthService.ts#AuthService",
@@ -31,7 +31,7 @@
       "contentHash": "e47297468badd2b70540a4934d4d39b9ab5b5527e30ce3cd6011c9efee2ba74d",
       "mtimeMs": 1788945550754.4016,
       "size": 317,
-      "cachedAtMs": 1791288996336,
+      "cachedAtMs": 1791289331117,
       "symbols": [
         {
           "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/UserService.ts#UserService",

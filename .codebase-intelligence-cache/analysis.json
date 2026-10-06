@@ -1,0 +1,4514 @@
+{
+  "version": "v2-parser",
+  "entries": {
+    "C:/Projetos/Personal/Codebase-intelligence/vitest.config.ts": {
+      "contentHash": "f7d08292128c0e8baa3ae0a5863c81d9fca641cb0b780dcbc434a65cb200573e",
+      "mtimeMs": 1788941685236.124,
+      "size": 264,
+      "cachedAtMs": 1791289286190,
+      "symbols": [],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/vitest.config.ts",
+          "target": "vitest/config",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/examples/basic-usage.ts": {
+      "contentHash": "ce37b81ee6fb1fa22d1afad61c2910b389d28ab48c94c35f9e3afe9cadc52f50",
+      "mtimeMs": 1788957920213.3152,
+      "size": 1870,
+      "cachedAtMs": 1791289286198,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/examples/basic-usage.ts#runExample",
+          "name": "runExample",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/examples/basic-usage.ts",
+          "startLine": 8,
+          "endLine": 45
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/examples/basic-usage.ts#__filename",
+          "name": "__filename",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/examples/basic-usage.ts",
+          "startLine": 5,
+          "endLine": 5
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/examples/basic-usage.ts#__dirname",
+          "name": "__dirname",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/examples/basic-usage.ts",
+          "startLine": 6,
+          "endLine": 6
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/examples/basic-usage.ts",
+          "target": "path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/examples/basic-usage.ts",
+          "target": "url",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/examples/basic-usage.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/dist/index.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/index.ts": {
+      "contentHash": "6e15a5bd30da17371757f33ae5e14b2d41f5f5a0935bbd6b49fa49cddb696c5c",
+      "mtimeMs": 1791284270247.1719,
+      "size": 2369,
+      "cachedAtMs": 1791289286209,
+      "symbols": [],
+      "dependencies": []
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts": {
+      "contentHash": "a28c0a3edab5f7a4f4d346079df73f377411606a03b17d77d96fda9c37471de0",
+      "mtimeMs": 1791278691570.396,
+      "size": 7314,
+      "cachedAtMs": 1791289287360,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts#CodebaseWithAI",
+          "name": "CodebaseWithAI",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts",
+          "startLine": 49,
+          "endLine": 212
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts#explain",
+          "name": "explain",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts",
+          "startLine": 70,
+          "endLine": 75,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts#CodebaseWithAI"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts#ask",
+          "name": "ask",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts",
+          "startLine": 90,
+          "endLine": 119,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts#CodebaseWithAI"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts#buildExplainPayload",
+          "name": "buildExplainPayload",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts",
+          "startLine": 126,
+          "endLine": 136,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts#CodebaseWithAI"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts#buildExplainPrompt",
+          "name": "buildExplainPrompt",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts",
+          "startLine": 140,
+          "endLine": 168,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts#CodebaseWithAI"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts#buildAskPrompt",
+          "name": "buildAskPrompt",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts",
+          "startLine": 170,
+          "endLine": 187,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts#CodebaseWithAI"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts#buildSystemPrompt",
+          "name": "buildSystemPrompt",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts",
+          "startLine": 189,
+          "endLine": 211,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts#CodebaseWithAI"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts#ExplainOptions",
+          "name": "ExplainOptions",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts",
+          "startLine": 7,
+          "endLine": 13
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts#AskOptions",
+          "name": "AskOptions",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts",
+          "startLine": 16,
+          "endLine": 32
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/interfaces.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/types.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/search/CodeSearch.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.ts#ExplainOptions",
+          "target": "ContextOptions",
+          "type": "extends"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/ai/index.ts": {
+      "contentHash": "d342eb0a834024562a9a8c4c3f575aa72f0b0897eeea00885f597af381d576d3",
+      "mtimeMs": 1791279864528.929,
+      "size": 341,
+      "cachedAtMs": 1791289287362,
+      "symbols": [],
+      "dependencies": []
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/ai/RAGPipeline.ts": {
+      "contentHash": "2f9c1ebc30aa57da6ed8c36d524620f07fc33f3f653e90c2bdd2c6ca2d3a4b21",
+      "mtimeMs": 1791279937607.3489,
+      "size": 4552,
+      "cachedAtMs": 1791289287486,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/ai/RAGPipeline.ts#RAGPipeline",
+          "name": "RAGPipeline",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/ai/RAGPipeline.ts",
+          "startLine": 45,
+          "endLine": 142
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/ai/RAGPipeline.ts#index",
+          "name": "index",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/ai/RAGPipeline.ts",
+          "startLine": 62,
+          "endLine": 101,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/ai/RAGPipeline.ts#RAGPipeline"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/ai/RAGPipeline.ts#search",
+          "name": "search",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/ai/RAGPipeline.ts",
+          "startLine": 113,
+          "endLine": 141,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/ai/RAGPipeline.ts#RAGPipeline"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/ai/RAGPipeline.ts#RAGPipelineOptions",
+          "name": "RAGPipelineOptions",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/ai/RAGPipeline.ts",
+          "startLine": 9,
+          "endLine": 25
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/ai/RAGPipeline.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/ai/RAGPipeline.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/interfaces.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/ai/RAGPipeline.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/ai/RAGPipeline.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/analysis/DependencyAnalyzer.ts": {
+      "contentHash": "461ab0a5ec1316b43ad61ed6f429d8c90c402438c84f77d955a07e4f7740cf35",
+      "mtimeMs": 1788947736416.0674,
+      "size": 344,
+      "cachedAtMs": 1791289287486,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/analysis/DependencyAnalyzer.ts#DependencyAnalyzer",
+          "name": "DependencyAnalyzer",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/analysis/DependencyAnalyzer.ts",
+          "startLine": 3,
+          "endLine": 13
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/analysis/DependencyAnalyzer.ts#dependencies",
+          "name": "dependencies",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/analysis/DependencyAnalyzer.ts",
+          "startLine": 6,
+          "endLine": 8,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/analysis/DependencyAnalyzer.ts#DependencyAnalyzer"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/analysis/DependencyAnalyzer.ts#dependents",
+          "name": "dependents",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/analysis/DependencyAnalyzer.ts",
+          "startLine": 10,
+          "endLine": 12,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/analysis/DependencyAnalyzer.ts#DependencyAnalyzer"
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/analysis/DependencyAnalyzer.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/analysis/ImpactAnalyzer.ts": {
+      "contentHash": "513ef7163a6afddb0604b6a5cd9e0fadd7246887189d9644f5239adf5c6aa19c",
+      "mtimeMs": 1788947738439.1223,
+      "size": 1716,
+      "cachedAtMs": 1791289287487,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/analysis/ImpactAnalyzer.ts#ImpactAnalyzer",
+          "name": "ImpactAnalyzer",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/analysis/ImpactAnalyzer.ts",
+          "startLine": 22,
+          "endLine": 52
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/analysis/ImpactAnalyzer.ts#impact",
+          "name": "impact",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/analysis/ImpactAnalyzer.ts",
+          "startLine": 25,
+          "endLine": 35,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/analysis/ImpactAnalyzer.ts#ImpactAnalyzer"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/analysis/ImpactAnalyzer.ts#findRelatedTests",
+          "name": "findRelatedTests",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/analysis/ImpactAnalyzer.ts",
+          "startLine": 37,
+          "endLine": 51,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/analysis/ImpactAnalyzer.ts#ImpactAnalyzer"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/analysis/ImpactAnalyzer.ts#ImpactResult",
+          "name": "ImpactResult",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/analysis/ImpactAnalyzer.ts",
+          "startLine": 4,
+          "endLine": 8
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/analysis/ImpactAnalyzer.ts",
+          "target": "path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/analysis/ImpactAnalyzer.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/cli/index.ts": {
+      "contentHash": "2a5cf3d978511858384924a23e1741f3ae5c310853352ba9a31c14132852cfd8",
+      "mtimeMs": 1791289127325.9307,
+      "size": 14918,
+      "cachedAtMs": 1791289287491,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/cli/index.ts#program",
+          "name": "program",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/cli/index.ts",
+          "startLine": 11,
+          "endLine": 11
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/cli/index.ts#printJson",
+          "name": "printJson",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/cli/index.ts",
+          "startLine": 20,
+          "endLine": 22
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/cli/index.ts#resolveTarget",
+          "name": "resolveTarget",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/cli/index.ts",
+          "startLine": 24,
+          "endLine": 24
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/cli/index.ts#findFile",
+          "name": "findFile",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/cli/index.ts",
+          "startLine": 26,
+          "endLine": 27
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/cli/index.ts#loadAndAnalyze",
+          "name": "loadAndAnalyze",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/cli/index.ts",
+          "startLine": 29,
+          "endLine": 33
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/cli/index.ts#handleCtrlC",
+          "name": "handleCtrlC",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/cli/index.ts",
+          "startLine": 36,
+          "endLine": 43
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/cli/index.ts#startWatch",
+          "name": "startWatch",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/cli/index.ts",
+          "startLine": 49,
+          "endLine": 75
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/cli/index.ts",
+          "target": "commander",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/cli/index.ts",
+          "target": "path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/cli/index.ts",
+          "target": "fs",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/cli/index.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/index.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/cli/index.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/cli/index.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/cli/Watcher.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/cli/index.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/types.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/cli/Watcher.ts": {
+      "contentHash": "be8d98d1fbc1e379f60d99c218b3a79caed6c4cb7817cb7ae14b8624c3fdb198",
+      "mtimeMs": 1788962173385.8223,
+      "size": 3487,
+      "cachedAtMs": 1791289287587,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/cli/Watcher.ts#Watcher",
+          "name": "Watcher",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/cli/Watcher.ts",
+          "startLine": 31,
+          "endLine": 112
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/cli/Watcher.ts#start",
+          "name": "start",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/cli/Watcher.ts",
+          "startLine": 46,
+          "endLine": 74,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/cli/Watcher.ts#Watcher"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/cli/Watcher.ts#stop",
+          "name": "stop",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/cli/Watcher.ts",
+          "startLine": 76,
+          "endLine": 84,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/cli/Watcher.ts#Watcher"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/cli/Watcher.ts#_enqueue",
+          "name": "_enqueue",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/cli/Watcher.ts",
+          "startLine": 91,
+          "endLine": 93,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/cli/Watcher.ts#Watcher"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/cli/Watcher.ts#handleRaw",
+          "name": "handleRaw",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/cli/Watcher.ts",
+          "startLine": 95,
+          "endLine": 99,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/cli/Watcher.ts#Watcher"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/cli/Watcher.ts#scheduleFlush",
+          "name": "scheduleFlush",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/cli/Watcher.ts",
+          "startLine": 101,
+          "endLine": 111,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/cli/Watcher.ts#Watcher"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/cli/Watcher.ts#WatcherOptions",
+          "name": "WatcherOptions",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/cli/Watcher.ts",
+          "startLine": 5,
+          "endLine": 20
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/cli/Watcher.ts#WatchEventHandler",
+          "name": "WatchEventHandler",
+          "kind": "typeAlias",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/cli/Watcher.ts",
+          "startLine": 3,
+          "endLine": 3
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/cli/Watcher.ts",
+          "target": "fs",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts": {
+      "contentHash": "a40764d00b2ec3c1fc711d8e8b7dfe208d288b0f77ed6f4ad318849e953692a4",
+      "mtimeMs": 1791277859300.66,
+      "size": 8105,
+      "cachedAtMs": 1791289287589,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts#ContextEngine",
+          "name": "ContextEngine",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts",
+          "startLine": 37,
+          "endLine": 220
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts#forFile",
+          "name": "forFile",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts",
+          "startLine": 55,
+          "endLine": 62,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts#ContextEngine"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts#forSymbol",
+          "name": "forSymbol",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts",
+          "startLine": 64,
+          "endLine": 77,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts#ContextEngine"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts#buildPayload",
+          "name": "buildPayload",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts",
+          "startLine": 81,
+          "endLine": 146,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts#ContextEngine"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts#applyTokenBudget",
+          "name": "applyTokenBudget",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts",
+          "startLine": 156,
+          "endLine": 175,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts#ContextEngine"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts#resolveFilePath",
+          "name": "resolveFilePath",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts",
+          "startLine": 183,
+          "endLine": 186,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts#ContextEngine"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts#requireFile",
+          "name": "requireFile",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts",
+          "startLine": 192,
+          "endLine": 205,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts#ContextEngine"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts#findRelatedTests",
+          "name": "findRelatedTests",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts",
+          "startLine": 213,
+          "endLine": 219,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts#ContextEngine"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts#estimateTokens",
+          "name": "estimateTokens",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts",
+          "startLine": 231,
+          "endLine": 234
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts#DEFAULT_STRATEGY",
+          "name": "DEFAULT_STRATEGY",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts",
+          "startLine": 20,
+          "endLine": 20
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts#DEFAULT_MAX_TOKENS",
+          "name": "DEFAULT_MAX_TOKENS",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts",
+          "startLine": 21,
+          "endLine": 21
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts",
+          "target": "path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/interfaces.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/types.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/ShallowStrategy.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/SignatureStrategy.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/DeepStrategy.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/ContextBuildStrategy.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.ts#ContextEngine",
+          "target": "IContextEngine",
+          "type": "implements"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.ts": {
+      "contentHash": "01aaf2ef5d17570a378151a6edef7f3590172c2ce2888f76565f66eea1236afc",
+      "mtimeMs": 1791277823297.7341,
+      "size": 5528,
+      "cachedAtMs": 1791289287591,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.ts#FileContextBuilder",
+          "name": "FileContextBuilder",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.ts",
+          "startLine": 13,
+          "endLine": 141
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.ts#buildFileNode",
+          "name": "buildFileNode",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.ts",
+          "startLine": 22,
+          "endLine": 41,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.ts#FileContextBuilder"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.ts#buildSignatureNode",
+          "name": "buildSignatureNode",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.ts",
+          "startLine": 58,
+          "endLine": 104,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.ts#FileContextBuilder"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.ts#resolveRelativePath",
+          "name": "resolveRelativePath",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.ts",
+          "startLine": 113,
+          "endLine": 115,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.ts#FileContextBuilder"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.ts#readFile",
+          "name": "readFile",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.ts",
+          "startLine": 119,
+          "endLine": 127,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.ts#FileContextBuilder"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.ts#normaliseRelativePath",
+          "name": "normaliseRelativePath",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.ts",
+          "startLine": 129,
+          "endLine": 140,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.ts#FileContextBuilder"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.ts#buildNodeId",
+          "name": "buildNodeId",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.ts",
+          "startLine": 150,
+          "endLine": 152
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.ts",
+          "target": "fs/promises",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.ts",
+          "target": "path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/types.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/context/interfaces.ts": {
+      "contentHash": "0524451862f8b7f737ba37b252d39bcc46f9a29d23cb9d41ee556c1a37f68744",
+      "mtimeMs": 1790952902555.0464,
+      "size": 5868,
+      "cachedAtMs": 1791289287592,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/interfaces.ts#IContextEngine",
+          "name": "IContextEngine",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/interfaces.ts",
+          "startLine": 26,
+          "endLine": 43
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/interfaces.ts#AIProvider",
+          "name": "AIProvider",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/interfaces.ts",
+          "startLine": 66,
+          "endLine": 86
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/interfaces.ts#EmbeddingProvider",
+          "name": "EmbeddingProvider",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/interfaces.ts",
+          "startLine": 108,
+          "endLine": 120
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/interfaces.ts#VectorSearchResult",
+          "name": "VectorSearchResult",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/interfaces.ts",
+          "startLine": 127,
+          "endLine": 134
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/interfaces.ts#VectorStore",
+          "name": "VectorStore",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/interfaces.ts",
+          "startLine": 151,
+          "endLine": 176
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/interfaces.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/types.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts": {
+      "contentHash": "8e15cc8840c07621b6f7af3fa6883453b4d6aaa249eb820a3c02ecddcec997b2",
+      "mtimeMs": 1791278989064.6958,
+      "size": 15318,
+      "cachedAtMs": 1791289287593,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts#SemanticChunker",
+          "name": "SemanticChunker",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts",
+          "startLine": 85,
+          "endLine": 362
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts#chunk",
+          "name": "chunk",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts",
+          "startLine": 110,
+          "endLine": 123,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts#SemanticChunker"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts#chunkFile",
+          "name": "chunkFile",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts",
+          "startLine": 127,
+          "endLine": 165,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts#SemanticChunker"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts#chunksForDeclaration",
+          "name": "chunksForDeclaration",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts",
+          "startLine": 169,
+          "endLine": 184,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts#SemanticChunker"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts#chunksForClass",
+          "name": "chunksForClass",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts",
+          "startLine": 192,
+          "endLine": 221,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts#SemanticChunker"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts#subChunkByMethod",
+          "name": "subChunkByMethod",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts",
+          "startLine": 227,
+          "endLine": 299,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts#SemanticChunker"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts#buildSymbolChunk",
+          "name": "buildSymbolChunk",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts",
+          "startLine": 303,
+          "endLine": 316,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts#SemanticChunker"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts#buildWholeFileChunk",
+          "name": "buildWholeFileChunk",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts",
+          "startLine": 320,
+          "endLine": 323,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts#SemanticChunker"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts#chunkNonTsFile",
+          "name": "chunkNonTsFile",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts",
+          "startLine": 325,
+          "endLine": 334,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts#SemanticChunker"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts#buildChunk",
+          "name": "buildChunk",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts",
+          "startLine": 338,
+          "endLine": 361,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts#SemanticChunker"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts#SemanticChunk",
+          "name": "SemanticChunk",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts",
+          "startLine": 16,
+          "endLine": 47
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts#ChunkerOptions",
+          "name": "ChunkerOptions",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts",
+          "startLine": 50,
+          "endLine": 62
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts#extractFileHeader",
+          "name": "extractFileHeader",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts",
+          "startLine": 372,
+          "endLine": 389
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts#getTopLevelDeclarations",
+          "name": "getTopLevelDeclarations",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts",
+          "startLine": 396,
+          "endLine": 415
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts#buildClassHeader",
+          "name": "buildClassHeader",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts",
+          "startLine": 418,
+          "endLine": 423
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts#getNodeKindAndName",
+          "name": "getNodeKindAndName",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts",
+          "startLine": 426,
+          "endLine": 447
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts#getMemberName",
+          "name": "getMemberName",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts",
+          "startLine": 450,
+          "endLine": 457
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts#estimateTokens",
+          "name": "estimateTokens",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts",
+          "startLine": 463,
+          "endLine": 465
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts",
+          "target": "ts-morph",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/context/SignatureExtractor.ts": {
+      "contentHash": "dc7dbf55e20a50c21e225f1a8b27aecaa71032ff41b217c9198d88d109999564",
+      "mtimeMs": 1791277752140.314,
+      "size": 6676,
+      "cachedAtMs": 1791289287594,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/SignatureExtractor.ts#SignatureExtractor",
+          "name": "SignatureExtractor",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/SignatureExtractor.ts",
+          "startLine": 18,
+          "endLine": 197
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/SignatureExtractor.ts#extract",
+          "name": "extract",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/SignatureExtractor.ts",
+          "startLine": 44,
+          "endLine": 51,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/SignatureExtractor.ts#SignatureExtractor"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/SignatureExtractor.ts#extractFromText",
+          "name": "extractFromText",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/SignatureExtractor.ts",
+          "startLine": 60,
+          "endLine": 74,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/SignatureExtractor.ts#SignatureExtractor"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/SignatureExtractor.ts#buildSignatureString",
+          "name": "buildSignatureString",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/SignatureExtractor.ts",
+          "startLine": 78,
+          "endLine": 132,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/SignatureExtractor.ts#SignatureExtractor"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/SignatureExtractor.ts#extractClassSignature",
+          "name": "extractClassSignature",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/SignatureExtractor.ts",
+          "startLine": 136,
+          "endLine": 168,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/SignatureExtractor.ts#SignatureExtractor"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/SignatureExtractor.ts#extractFunctionSignature",
+          "name": "extractFunctionSignature",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/SignatureExtractor.ts",
+          "startLine": 170,
+          "endLine": 174,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/SignatureExtractor.ts#SignatureExtractor"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/SignatureExtractor.ts#extractVariableSignature",
+          "name": "extractVariableSignature",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/SignatureExtractor.ts",
+          "startLine": 176,
+          "endLine": 181,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/SignatureExtractor.ts#SignatureExtractor"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/SignatureExtractor.ts#stripBody",
+          "name": "stripBody",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/SignatureExtractor.ts",
+          "startLine": 190,
+          "endLine": 196,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/SignatureExtractor.ts#SignatureExtractor"
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/SignatureExtractor.ts",
+          "target": "ts-morph",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/context/types.ts": {
+      "contentHash": "16ae662d48b5fa8dde132829bc92e50ce107b61c1b7684bf222e55f37df93849",
+      "mtimeMs": 1790952874986.4849,
+      "size": 5807,
+      "cachedAtMs": 1791289287594,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/types.ts#ContextNode",
+          "name": "ContextNode",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/types.ts",
+          "startLine": 31,
+          "endLine": 61
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/types.ts#ContextOptions",
+          "name": "ContextOptions",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/types.ts",
+          "startLine": 90,
+          "endLine": 116
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/types.ts#LLMContextPayload",
+          "name": "LLMContextPayload",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/types.ts",
+          "startLine": 129,
+          "endLine": 144
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/types.ts#ContextPayloadMetadata",
+          "name": "ContextPayloadMetadata",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/types.ts",
+          "startLine": 151,
+          "endLine": 158
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/types.ts#ContextNodeKind",
+          "name": "ContextNodeKind",
+          "kind": "typeAlias",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/types.ts",
+          "startLine": 25,
+          "endLine": 25
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/types.ts#ContextStrategy",
+          "name": "ContextStrategy",
+          "kind": "typeAlias",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/types.ts",
+          "startLine": 81,
+          "endLine": 81
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/types.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/diff/ChangeSetImpactAnalyzer.ts": {
+      "contentHash": "8f93c64582d4fa8216c3cfd6bedba133bc300dad8a25aae44716d2fd59d6392c",
+      "mtimeMs": 1791285900152.8506,
+      "size": 4623,
+      "cachedAtMs": 1791289287595,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/ChangeSetImpactAnalyzer.ts#ChangeSetImpactAnalyzer",
+          "name": "ChangeSetImpactAnalyzer",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/ChangeSetImpactAnalyzer.ts",
+          "startLine": 11,
+          "endLine": 138
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/ChangeSetImpactAnalyzer.ts#analyze",
+          "name": "analyze",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/ChangeSetImpactAnalyzer.ts",
+          "startLine": 48,
+          "endLine": 133,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/diff/ChangeSetImpactAnalyzer.ts#ChangeSetImpactAnalyzer"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/ChangeSetImpactAnalyzer.ts#toRel",
+          "name": "toRel",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/ChangeSetImpactAnalyzer.ts",
+          "startLine": 135,
+          "endLine": 137,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/diff/ChangeSetImpactAnalyzer.ts#ChangeSetImpactAnalyzer"
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/diff/ChangeSetImpactAnalyzer.ts",
+          "target": "node:path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/diff/ChangeSetImpactAnalyzer.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/diff/ChangeSetImpactAnalyzer.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/diff/ChangeSetImpactAnalyzer.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/analysis/ImpactAnalyzer.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/diff/ChangeSetImpactAnalyzer.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/diff/types.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/diff/errors.ts": {
+      "contentHash": "2ebebd85c60f1f0fa7b6003e21a304c76e768056f95c7d0b84f0f62a7d4fa958",
+      "mtimeMs": 1791284258199.2302,
+      "size": 2162,
+      "cachedAtMs": 1791289287599,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/errors.ts#GitNotAvailableError",
+          "name": "GitNotAvailableError",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/errors.ts",
+          "startLine": 16,
+          "endLine": 21
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/errors.ts#NotAGitRepositoryError",
+          "name": "NotAGitRepositoryError",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/errors.ts",
+          "startLine": 28,
+          "endLine": 36
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/errors.ts#InvalidGitRefError",
+          "name": "InvalidGitRefError",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/errors.ts",
+          "startLine": 42,
+          "endLine": 51
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/errors.ts#GitCommandError",
+          "name": "GitCommandError",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/errors.ts",
+          "startLine": 59,
+          "endLine": 72
+        }
+      ],
+      "dependencies": []
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts": {
+      "contentHash": "20ab693cf03bf9498c3843ba6d3f61554fe0b3e242b9e54aa8c300acee807411",
+      "mtimeMs": 1791285656547.1602,
+      "size": 12055,
+      "cachedAtMs": 1791289287601,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#GitChangeSetProvider",
+          "name": "GitChangeSetProvider",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts",
+          "startLine": 37,
+          "endLine": 356
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#getChanges",
+          "name": "getChanges",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts",
+          "startLine": 45,
+          "endLine": 69,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#GitChangeSetProvider"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#getStagedChanges",
+          "name": "getStagedChanges",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts",
+          "startLine": 74,
+          "endLine": 80,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#GitChangeSetProvider"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#getUncommittedChanges",
+          "name": "getUncommittedChanges",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts",
+          "startLine": 86,
+          "endLine": 108,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#GitChangeSetProvider"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#getChangesSince",
+          "name": "getChangesSince",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts",
+          "startLine": 115,
+          "endLine": 144,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#GitChangeSetProvider"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#parseDiffOutput",
+          "name": "parseDiffOutput",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts",
+          "startLine": 157,
+          "endLine": 196,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#GitChangeSetProvider"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#parseUntrackedOutput",
+          "name": "parseUntrackedOutput",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts",
+          "startLine": 199,
+          "endLine": 205,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#GitChangeSetProvider"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#mapStatusCode",
+          "name": "mapStatusCode",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts",
+          "startLine": 207,
+          "endLine": 215,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#GitChangeSetProvider"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#normaliseAndSort",
+          "name": "normaliseAndSort",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts",
+          "startLine": 224,
+          "endLine": 252,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#GitChangeSetProvider"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#validateOptions",
+          "name": "validateOptions",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts",
+          "startLine": 256,
+          "endLine": 269,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#GitChangeSetProvider"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#validateRef",
+          "name": "validateRef",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts",
+          "startLine": 278,
+          "endLine": 287,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#GitChangeSetProvider"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#resolveGitRoot",
+          "name": "resolveGitRoot",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts",
+          "startLine": 292,
+          "endLine": 302,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#GitChangeSetProvider"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#isShallowRepository",
+          "name": "isShallowRepository",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts",
+          "startLine": 305,
+          "endLine": 315,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#GitChangeSetProvider"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#headExists",
+          "name": "headExists",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts",
+          "startLine": 318,
+          "endLine": 325,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#GitChangeSetProvider"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#ensureGitAvailable",
+          "name": "ensureGitAvailable",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts",
+          "startLine": 328,
+          "endLine": 334,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#GitChangeSetProvider"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#runGit",
+          "name": "runGit",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts",
+          "startLine": 342,
+          "endLine": 355,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#GitChangeSetProvider"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#execFile",
+          "name": "execFile",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts",
+          "startLine": 13,
+          "endLine": 13
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts",
+          "target": "node:child_process",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts",
+          "target": "node:util",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts",
+          "target": "node:path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts",
+          "target": "node:fs",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/diff/types.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/diff/errors.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.ts#GitChangeSetProvider",
+          "target": "ChangeSetProvider",
+          "type": "implements"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/diff/types.ts": {
+      "contentHash": "ac41a9dcbbb1b22ae966e99c48bf2a600d00c7542db41b12f96c8bcb0cdc3240",
+      "mtimeMs": 1791284241829.3545,
+      "size": 6407,
+      "cachedAtMs": 1791289287602,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/types.ts#FileChange",
+          "name": "FileChange",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/types.ts",
+          "startLine": 27,
+          "endLine": 36
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/types.ts#ChangeSetOptions",
+          "name": "ChangeSetOptions",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/types.ts",
+          "startLine": 53,
+          "endLine": 75
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/types.ts#ChangeSetProvider",
+          "name": "ChangeSetProvider",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/types.ts",
+          "startLine": 88,
+          "endLine": 94
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/types.ts#ChangeSetImpact",
+          "name": "ChangeSetImpact",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/types.ts",
+          "startLine": 135,
+          "endLine": 194
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/types.ts#ChangeStatus",
+          "name": "ChangeStatus",
+          "kind": "typeAlias",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/types.ts",
+          "startLine": 16,
+          "endLine": 22
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/diff/types.ts#UnanalyzableReason",
+          "name": "UnanalyzableReason",
+          "kind": "typeAlias",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/diff/types.ts",
+          "startLine": 107,
+          "endLine": 121
+        }
+      ],
+      "dependencies": []
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/discovery/FileScanner.ts": {
+      "contentHash": "222e2b86d2beff8f9bd5da8eeb43d42caa02154513d15b43d33b9774544491bc",
+      "mtimeMs": 1788943015242.4739,
+      "size": 1763,
+      "cachedAtMs": 1791289287602,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/FileScanner.ts#FileScanner",
+          "name": "FileScanner",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/FileScanner.ts",
+          "startLine": 23,
+          "endLine": 66
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/FileScanner.ts#scan",
+          "name": "scan",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/FileScanner.ts",
+          "startLine": 32,
+          "endLine": 57,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/FileScanner.ts#FileScanner"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/FileScanner.ts#determineLanguage",
+          "name": "determineLanguage",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/FileScanner.ts",
+          "startLine": 59,
+          "endLine": 65,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/FileScanner.ts#FileScanner"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/FileScanner.ts#FileScannerOptions",
+          "name": "FileScannerOptions",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/FileScanner.ts",
+          "startLine": 8,
+          "endLine": 10
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/FileScanner.ts#RELEVANT_PATTERNS",
+          "name": "RELEVANT_PATTERNS",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/FileScanner.ts",
+          "startLine": 12,
+          "endLine": 21
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/FileScanner.ts",
+          "target": "fast-glob",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/FileScanner.ts",
+          "target": "path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/FileScanner.ts",
+          "target": "fs/promises",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/FileScanner.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/FileScanner.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/IgnoreMatcher.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/FileScanner.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/IgnoreMatcher.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/FileScanner.ts#FileScannerOptions",
+          "target": "IgnoreMatcherOptions",
+          "type": "extends"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/discovery/IgnoreMatcher.ts": {
+      "contentHash": "8874acd7efe044477d4d30285c74c7616d4f4e5db1109de5138c8465e07dd01c",
+      "mtimeMs": 1788942497983.8093,
+      "size": 733,
+      "cachedAtMs": 1791289287603,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/IgnoreMatcher.ts#IgnoreMatcher",
+          "name": "IgnoreMatcher",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/IgnoreMatcher.ts",
+          "startLine": 21,
+          "endLine": 37
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/IgnoreMatcher.ts#getGlobIgnores",
+          "name": "getGlobIgnores",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/IgnoreMatcher.ts",
+          "startLine": 34,
+          "endLine": 36,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/IgnoreMatcher.ts#IgnoreMatcher"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/IgnoreMatcher.ts#IgnoreMatcherOptions",
+          "name": "IgnoreMatcherOptions",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/IgnoreMatcher.ts",
+          "startLine": 1,
+          "endLine": 4
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/IgnoreMatcher.ts#DEFAULT_IGNORES",
+          "name": "DEFAULT_IGNORES",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/IgnoreMatcher.ts",
+          "startLine": 6,
+          "endLine": 19
+        }
+      ],
+      "dependencies": []
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/discovery/ProjectDetector.ts": {
+      "contentHash": "c7640d92cf212dce25cc98418fb135ff46326f1855b53aa5f0deea08f2f7452f",
+      "mtimeMs": 1788943442155.796,
+      "size": 2512,
+      "cachedAtMs": 1791289287604,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/ProjectDetector.ts#ProjectDetector",
+          "name": "ProjectDetector",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/ProjectDetector.ts",
+          "startLine": 11,
+          "endLine": 84
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/ProjectDetector.ts#detect",
+          "name": "detect",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/ProjectDetector.ts",
+          "startLine": 14,
+          "endLine": 25,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/ProjectDetector.ts#ProjectDetector"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/ProjectDetector.ts#detectLanguages",
+          "name": "detectLanguages",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/ProjectDetector.ts",
+          "startLine": 27,
+          "endLine": 34,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/ProjectDetector.ts#ProjectDetector"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/ProjectDetector.ts#readPackageJson",
+          "name": "readPackageJson",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/ProjectDetector.ts",
+          "startLine": 36,
+          "endLine": 46,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/ProjectDetector.ts#ProjectDetector"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/ProjectDetector.ts#detectFrameworks",
+          "name": "detectFrameworks",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/ProjectDetector.ts",
+          "startLine": 48,
+          "endLine": 66,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/ProjectDetector.ts#ProjectDetector"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/ProjectDetector.ts#detectPackageManager",
+          "name": "detectPackageManager",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/ProjectDetector.ts",
+          "startLine": 68,
+          "endLine": 83,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/ProjectDetector.ts#ProjectDetector"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/ProjectDetector.ts#ProjectInfo",
+          "name": "ProjectInfo",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/ProjectDetector.ts",
+          "startLine": 5,
+          "endLine": 9
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/ProjectDetector.ts",
+          "target": "path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/ProjectDetector.ts",
+          "target": "fs/promises",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/ProjectDetector.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.ts": {
+      "contentHash": "7308e0b54eeccf7c620a7455dc76dd3a0429ffa74231f7e228039eab1b3bed41",
+      "mtimeMs": 1788946211932.1394,
+      "size": 819,
+      "cachedAtMs": 1791289287605,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.ts#FileIndex",
+          "name": "FileIndex",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.ts",
+          "startLine": 3,
+          "endLine": 33
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.ts#add",
+          "name": "add",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.ts",
+          "startLine": 7,
+          "endLine": 10,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.ts#FileIndex"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.ts#addAll",
+          "name": "addAll",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.ts",
+          "startLine": 12,
+          "endLine": 16,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.ts#FileIndex"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.ts#getByPath",
+          "name": "getByPath",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.ts",
+          "startLine": 18,
+          "endLine": 20,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.ts#FileIndex"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.ts#getByRelativePath",
+          "name": "getByRelativePath",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.ts",
+          "startLine": 22,
+          "endLine": 24,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.ts#FileIndex"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.ts#all",
+          "name": "all",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.ts",
+          "startLine": 26,
+          "endLine": 28,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.ts#FileIndex"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.ts#size",
+          "name": "size",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.ts",
+          "startLine": 30,
+          "endLine": 32,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.ts#FileIndex"
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.ts": {
+      "contentHash": "35e73649d6d05e0a08fa492936b41001a954ab39ff728dd4819c13254e1097ba",
+      "mtimeMs": 1788946217410.305,
+      "size": 1408,
+      "cachedAtMs": 1791289287606,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.ts#SymbolIndex",
+          "name": "SymbolIndex",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.ts",
+          "startLine": 9,
+          "endLine": 52
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.ts#add",
+          "name": "add",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.ts",
+          "startLine": 14,
+          "endLine": 24,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.ts#SymbolIndex"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.ts#addAll",
+          "name": "addAll",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.ts",
+          "startLine": 26,
+          "endLine": 30,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.ts#SymbolIndex"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.ts#findSymbol",
+          "name": "findSymbol",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.ts",
+          "startLine": 32,
+          "endLine": 34,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.ts#SymbolIndex"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.ts#findSymbols",
+          "name": "findSymbols",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.ts",
+          "startLine": 36,
+          "endLine": 43,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.ts#SymbolIndex"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.ts#findByFile",
+          "name": "findByFile",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.ts",
+          "startLine": 45,
+          "endLine": 47,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.ts#SymbolIndex"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.ts#size",
+          "name": "size",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.ts",
+          "startLine": 49,
+          "endLine": 51,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.ts#SymbolIndex"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.ts#SymbolQuery",
+          "name": "SymbolQuery",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.ts",
+          "startLine": 3,
+          "endLine": 7
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts": {
+      "contentHash": "f10fe45a7fa39e9f96f15c4018bcaaa2b00f5f96ae836e6b0fafb1684a5b1805",
+      "mtimeMs": 1788946688567.963,
+      "size": 4427,
+      "cachedAtMs": 1791289287608,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#DependencyGraph",
+          "name": "DependencyGraph",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts",
+          "startLine": 13,
+          "endLine": 137
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#addNode",
+          "name": "addNode",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts",
+          "startLine": 23,
+          "endLine": 26,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#DependencyGraph"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#removeNode",
+          "name": "removeNode",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts",
+          "startLine": 28,
+          "endLine": 41,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#DependencyGraph"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#hasNode",
+          "name": "hasNode",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts",
+          "startLine": 43,
+          "endLine": 45,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#DependencyGraph"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#nodes",
+          "name": "nodes",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts",
+          "startLine": 47,
+          "endLine": 49,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#DependencyGraph"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#addEdge",
+          "name": "addEdge",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts",
+          "startLine": 53,
+          "endLine": 61,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#DependencyGraph"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#removeEdge",
+          "name": "removeEdge",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts",
+          "startLine": 63,
+          "endLine": 67,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#DependencyGraph"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#getEdge",
+          "name": "getEdge",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts",
+          "startLine": 69,
+          "endLine": 71,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#DependencyGraph"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#dependenciesOf",
+          "name": "dependenciesOf",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts",
+          "startLine": 76,
+          "endLine": 78,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#DependencyGraph"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#dependentsOf",
+          "name": "dependentsOf",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts",
+          "startLine": 81,
+          "endLine": 83,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#DependencyGraph"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#neighbors",
+          "name": "neighbors",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts",
+          "startLine": 86,
+          "endLine": 90,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#DependencyGraph"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#traverseBFS",
+          "name": "traverseBFS",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts",
+          "startLine": 100,
+          "endLine": 122,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#DependencyGraph"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#allDependenciesOf",
+          "name": "allDependenciesOf",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts",
+          "startLine": 127,
+          "endLine": 129,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#DependencyGraph"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#allDependentsOf",
+          "name": "allDependentsOf",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts",
+          "startLine": 134,
+          "endLine": 136,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#DependencyGraph"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts#GraphEdge",
+          "name": "GraphEdge",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.ts",
+          "startLine": 1,
+          "endLine": 5
+        }
+      ],
+      "dependencies": []
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/graph/GraphBuilder.ts": {
+      "contentHash": "9cb0aa303659802378a73d313af27aa43c37390fa1b44fc9fb9466d9bb931c64",
+      "mtimeMs": 1788946653734.5205,
+      "size": 795,
+      "cachedAtMs": 1791289287609,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/graph/GraphBuilder.ts#GraphBuilder",
+          "name": "GraphBuilder",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/graph/GraphBuilder.ts",
+          "startLine": 9,
+          "endLine": 26
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/graph/GraphBuilder.ts#build",
+          "name": "build",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/graph/GraphBuilder.ts",
+          "startLine": 10,
+          "endLine": 25,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/graph/GraphBuilder.ts#GraphBuilder"
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/graph/GraphBuilder.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/graph/GraphBuilder.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/search/CodeSearch.ts": {
+      "contentHash": "20e43b97f2a29d185daa661d49395f309773c511548efff60e17a66448c151c1",
+      "mtimeMs": 1788947512876.2725,
+      "size": 2364,
+      "cachedAtMs": 1791289287610,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/search/CodeSearch.ts#CodeSearch",
+          "name": "CodeSearch",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/search/CodeSearch.ts",
+          "startLine": 18,
+          "endLine": 79
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/search/CodeSearch.ts#search",
+          "name": "search",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/search/CodeSearch.ts",
+          "startLine": 27,
+          "endLine": 78,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/search/CodeSearch.ts#CodeSearch"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/search/CodeSearch.ts#SearchOptions",
+          "name": "SearchOptions",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/search/CodeSearch.ts",
+          "startLine": 5,
+          "endLine": 9
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/search/CodeSearch.ts#SearchResult",
+          "name": "SearchResult",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/search/CodeSearch.ts",
+          "startLine": 11,
+          "endLine": 16
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/search/CodeSearch.ts#SearchMode",
+          "name": "SearchMode",
+          "kind": "typeAlias",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/search/CodeSearch.ts",
+          "startLine": 3,
+          "endLine": 3
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/search/CodeSearch.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts": {
+      "contentHash": "9c3f7b91c7fcf452163852895f5ffae32c7a746d6288e088568173e1a87ff7e0",
+      "mtimeMs": 1788963945738.4116,
+      "size": 4945,
+      "cachedAtMs": 1791289287611,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts#AnalysisCache",
+          "name": "AnalysisCache",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts",
+          "startLine": 31,
+          "endLine": 152
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts#fingerprint",
+          "name": "fingerprint",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts",
+          "startLine": 45,
+          "endLine": 48,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts#AnalysisCache"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts#contentHash",
+          "name": "contentHash",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts",
+          "startLine": 50,
+          "endLine": 53,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts#AnalysisCache"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts#get",
+          "name": "get",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts",
+          "startLine": 61,
+          "endLine": 93,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts#AnalysisCache"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts#set",
+          "name": "set",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts",
+          "startLine": 95,
+          "endLine": 106,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts#AnalysisCache"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts#prune",
+          "name": "prune",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts",
+          "startLine": 109,
+          "endLine": 116,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts#AnalysisCache"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts#flush",
+          "name": "flush",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts",
+          "startLine": 119,
+          "endLine": 125,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts#AnalysisCache"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts#invalidate",
+          "name": "invalidate",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts",
+          "startLine": 128,
+          "endLine": 136,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts#AnalysisCache"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts#load",
+          "name": "load",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts",
+          "startLine": 140,
+          "endLine": 151,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts#AnalysisCache"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts#CachedEntry",
+          "name": "CachedEntry",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts",
+          "startLine": 10,
+          "endLine": 21
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts#CacheStore",
+          "name": "CacheStore",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts",
+          "startLine": 23,
+          "endLine": 26
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts#CACHE_DIR_NAME",
+          "name": "CACHE_DIR_NAME",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts",
+          "startLine": 7,
+          "endLine": 7
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts#CACHE_FILE_NAME",
+          "name": "CACHE_FILE_NAME",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts",
+          "startLine": 8,
+          "endLine": 8
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts#CACHE_SCHEMA_VERSION",
+          "name": "CACHE_SCHEMA_VERSION",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts",
+          "startLine": 29,
+          "endLine": 29
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts",
+          "target": "fs",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts",
+          "target": "path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts",
+          "target": "crypto",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts",
+          "target": "url",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts": {
+      "contentHash": "5813cd872ec0f476178912a91c6aa939511ba4214c997c9040d68826678ef20c",
+      "mtimeMs": 1791288975488.401,
+      "size": 9560,
+      "cachedAtMs": 1791289287612,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#Codebase",
+          "name": "Codebase",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "startLine": 33,
+          "endLine": 293
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#load",
+          "name": "load",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "startLine": 52,
+          "endLine": 73,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#Codebase"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#analyze",
+          "name": "analyze",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "startLine": 77,
+          "endLine": 120,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#Codebase"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#files",
+          "name": "files",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "startLine": 124,
+          "endLine": 126,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#Codebase"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#symbols",
+          "name": "symbols",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "startLine": 128,
+          "endLine": 130,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#Codebase"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#projectInfo",
+          "name": "projectInfo",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "startLine": 132,
+          "endLine": 134,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#Codebase"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#graph",
+          "name": "graph",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "startLine": 136,
+          "endLine": 138,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#Codebase"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#search",
+          "name": "search",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "startLine": 140,
+          "endLine": 143,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#Codebase"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#dependencies",
+          "name": "dependencies",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "startLine": 145,
+          "endLine": 147,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#Codebase"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#dependents",
+          "name": "dependents",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "startLine": 149,
+          "endLine": 151,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#Codebase"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#impact",
+          "name": "impact",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "startLine": 153,
+          "endLine": 155,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#Codebase"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#impactOfFiles",
+          "name": "impactOfFiles",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "startLine": 163,
+          "endLine": 181,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#Codebase"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#impactOfChanges",
+          "name": "impactOfChanges",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "startLine": 189,
+          "endLine": 215,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#Codebase"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#isAnalyzed",
+          "name": "isAnalyzed",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "startLine": 217,
+          "endLine": 219,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#Codebase"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#context",
+          "name": "context",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "startLine": 232,
+          "endLine": 245,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#Codebase"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#withAI",
+          "name": "withAI",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "startLine": 259,
+          "endLine": 267,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#Codebase"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#chunks",
+          "name": "chunks",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "startLine": 274,
+          "endLine": 283,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#Codebase"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#invalidateCache",
+          "name": "invalidateCache",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "startLine": 289,
+          "endLine": 292,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#Codebase"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts#CodebaseOptions",
+          "name": "CodebaseOptions",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "startLine": 27,
+          "endLine": 31
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "target": "path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/FileScanner.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/ProjectDetector.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/parsers/typescript/TypeScriptParser.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/parsers/ParserRegistry.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/graph/GraphBuilder.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/ProjectDetector.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/search/CodeSearch.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/search/CodeSearch.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/analysis/DependencyAnalyzer.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/analysis/ImpactAnalyzer.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/analysis/ImpactAnalyzer.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/interfaces.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/diff/ChangeSetImpactAnalyzer.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/diff/types.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/core/errors.ts": {
+      "contentHash": "7a952881931546f776f7615587abfe0a1ca48c173552ad00a71f0092e079785b",
+      "mtimeMs": 1788942026221.5813,
+      "size": 692,
+      "cachedAtMs": 1791289287612,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/errors.ts#FileNotFoundError",
+          "name": "FileNotFoundError",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/errors.ts",
+          "startLine": 1,
+          "endLine": 6
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/errors.ts#ParseError",
+          "name": "ParseError",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/errors.ts",
+          "startLine": 8,
+          "endLine": 13
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/errors.ts#UnresolvedDependencyError",
+          "name": "UnresolvedDependencyError",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/errors.ts",
+          "startLine": 15,
+          "endLine": 20
+        }
+      ],
+      "dependencies": []
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/core/interfaces.ts": {
+      "contentHash": "23b61fc5656e8e8eb254d4e047f463117f22951a19047754c33ddb2ca7281d6e",
+      "mtimeMs": 1788942116384.853,
+      "size": 162,
+      "cachedAtMs": 1791289287613,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/interfaces.ts#CodeParser",
+          "name": "CodeParser",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/interfaces.ts",
+          "startLine": 3,
+          "endLine": 6
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/core/interfaces.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/core/types.ts": {
+      "contentHash": "ffc017f851607fccbe7948a802678bfb5cfbe6a67b4b88c43ac54d2c9fdfc65b",
+      "mtimeMs": 1788944635595.519,
+      "size": 745,
+      "cachedAtMs": 1791289287613,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.ts#CodebaseFile",
+          "name": "CodebaseFile",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.ts",
+          "startLine": 7,
+          "endLine": 12
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.ts#CodeSymbol",
+          "name": "CodeSymbol",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.ts",
+          "startLine": 14,
+          "endLine": 22
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.ts#CodeDependency",
+          "name": "CodeDependency",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.ts",
+          "startLine": 24,
+          "endLine": 28
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.ts#ParsedFile",
+          "name": "ParsedFile",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.ts",
+          "startLine": 30,
+          "endLine": 34
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.ts#SupportedLanguage",
+          "name": "SupportedLanguage",
+          "kind": "typeAlias",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.ts",
+          "startLine": 1,
+          "endLine": 1
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.ts#SymbolKind",
+          "name": "SymbolKind",
+          "kind": "typeAlias",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.ts",
+          "startLine": 3,
+          "endLine": 3
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.ts#DependencyType",
+          "name": "DependencyType",
+          "kind": "typeAlias",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.ts",
+          "startLine": 5,
+          "endLine": 5
+        }
+      ],
+      "dependencies": []
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/parsers/Parser.ts": {
+      "contentHash": "492b663b365ca06663aa132297563e98bbe90261d2489214109615716e0301e8",
+      "mtimeMs": 1788944795149.2202,
+      "size": 109,
+      "cachedAtMs": 1791289287615,
+      "symbols": [],
+      "dependencies": []
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/parsers/ParserRegistry.ts": {
+      "contentHash": "126ec4eec63fb76ba597e4eea23783293f4193e9858b17ed412087e242a18967",
+      "mtimeMs": 1788944797171.2563,
+      "size": 335,
+      "cachedAtMs": 1791289287706,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/parsers/ParserRegistry.ts#ParserRegistry",
+          "name": "ParserRegistry",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/parsers/ParserRegistry.ts",
+          "startLine": 3,
+          "endLine": 13
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/parsers/ParserRegistry.ts#register",
+          "name": "register",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/parsers/ParserRegistry.ts",
+          "startLine": 6,
+          "endLine": 8,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/parsers/ParserRegistry.ts#ParserRegistry"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/parsers/ParserRegistry.ts#getParser",
+          "name": "getParser",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/parsers/ParserRegistry.ts",
+          "startLine": 10,
+          "endLine": 12,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/parsers/ParserRegistry.ts#ParserRegistry"
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/parsers/ParserRegistry.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/interfaces.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/ai/CodebaseWithAI.test.ts": {
+      "contentHash": "d65619d95765aa858139ded0ffb9121768952c0432877fc75d1ddccbac2c71fa",
+      "mtimeMs": 1791278773213.7861,
+      "size": 10298,
+      "cachedAtMs": 1791289287709,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/ai/CodebaseWithAI.test.ts#buildStubCodebase",
+          "name": "buildStubCodebase",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/ai/CodebaseWithAI.test.ts",
+          "startLine": 21,
+          "endLine": 87
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/ai/CodebaseWithAI.test.ts#FIXTURE_DIR",
+          "name": "FIXTURE_DIR",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/ai/CodebaseWithAI.test.ts",
+          "startLine": 17,
+          "endLine": 17
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/ai/CodebaseWithAI.test.ts#USER_PATH",
+          "name": "USER_PATH",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/ai/CodebaseWithAI.test.ts",
+          "startLine": 18,
+          "endLine": 18
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/ai/CodebaseWithAI.test.ts#AUTH_PATH",
+          "name": "AUTH_PATH",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/ai/CodebaseWithAI.test.ts",
+          "startLine": 19,
+          "endLine": 19
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/ai/CodebaseWithAI.test.ts",
+          "target": "vitest",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/ai/CodebaseWithAI.test.ts",
+          "target": "path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/ai/CodebaseWithAI.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/ai/CodebaseWithAI.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/ai/CodebaseWithAI.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/ai/CodebaseWithAI.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/ai/CodebaseWithAI.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/ai/CodebaseWithAI.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/ai/CodebaseWithAI.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/ai/providers/NoopAIProvider.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/ai/CodebaseWithAI.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/interfaces.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/ai/CodebaseWithAI.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/ai/CodebaseWithAI.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/ai/RAGPipeline.test.ts": {
+      "contentHash": "09f8d09768e98bac29676a257803335c24c2928e716b979b2b0f79fbc3561d5c",
+      "mtimeMs": 1791279885703.6982,
+      "size": 5383,
+      "cachedAtMs": 1791289287711,
+      "symbols": [],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/ai/RAGPipeline.test.ts",
+          "target": "vitest",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/ai/RAGPipeline.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/ai/RAGPipeline.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/ai/RAGPipeline.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/ai/RAGPipeline.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/interfaces.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/ai/RAGPipeline.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/context/ContextEngine.test.ts": {
+      "contentHash": "1681cc869c97ceb3ffa3b2e5ecbf71b5ef4127cb1edae2d66edc2954a13f8395",
+      "mtimeMs": 1790953558957.4993,
+      "size": 8139,
+      "cachedAtMs": 1791289287714,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/context/ContextEngine.test.ts#buildFixture",
+          "name": "buildFixture",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/context/ContextEngine.test.ts",
+          "startLine": 22,
+          "endLine": 87
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/context/ContextEngine.test.ts#FIXTURE_DIR",
+          "name": "FIXTURE_DIR",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/context/ContextEngine.test.ts",
+          "startLine": 18,
+          "endLine": 18
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/context/ContextEngine.test.ts#AUTH_PATH",
+          "name": "AUTH_PATH",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/context/ContextEngine.test.ts",
+          "startLine": 19,
+          "endLine": 19
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/context/ContextEngine.test.ts#USER_PATH",
+          "name": "USER_PATH",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/context/ContextEngine.test.ts",
+          "startLine": 20,
+          "endLine": 20
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/context/ContextEngine.test.ts",
+          "target": "vitest",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/context/ContextEngine.test.ts",
+          "target": "path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/context/ContextEngine.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/context/ContextEngine.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/context/ContextEngine.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/context/ContextEngine.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/ContextEngine.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/context/ContextEngine.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/context/ContextEngine.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/context/SemanticChunker.test.ts": {
+      "contentHash": "b89e9f93fe8599cda7cb6f6c07f50beab9738ed2bff0676a09020948e3273d5b",
+      "mtimeMs": 1791279176268.1433,
+      "size": 3340,
+      "cachedAtMs": 1791289287716,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/context/SemanticChunker.test.ts#FIXTURE_DIR",
+          "name": "FIXTURE_DIR",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/context/SemanticChunker.test.ts",
+          "startLine": 6,
+          "endLine": 6
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/context/SemanticChunker.test.ts#CHUNKER_TARGET_PATH",
+          "name": "CHUNKER_TARGET_PATH",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/context/SemanticChunker.test.ts",
+          "startLine": 7,
+          "endLine": 7
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/context/SemanticChunker.test.ts#NON_TS_TARGET_PATH",
+          "name": "NON_TS_TARGET_PATH",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/context/SemanticChunker.test.ts",
+          "startLine": 8,
+          "endLine": 8
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/context/SemanticChunker.test.ts#tsFile",
+          "name": "tsFile",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/context/SemanticChunker.test.ts",
+          "startLine": 10,
+          "endLine": 15
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/context/SemanticChunker.test.ts#jsonFile",
+          "name": "jsonFile",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/context/SemanticChunker.test.ts",
+          "startLine": 17,
+          "endLine": 22
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/context/SemanticChunker.test.ts",
+          "target": "vitest",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/context/SemanticChunker.test.ts",
+          "target": "path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/context/SemanticChunker.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/SemanticChunker.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/context/SemanticChunker.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/context/SignatureExtractor.test.ts": {
+      "contentHash": "76e6ac8366f0e650dcaed196298a057840dea9a5e56d63447ca94a38dfb9798b",
+      "mtimeMs": 1791278015267.8381,
+      "size": 7483,
+      "cachedAtMs": 1791289287718,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/context/SignatureExtractor.test.ts#FIXTURE_DIR",
+          "name": "FIXTURE_DIR",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/context/SignatureExtractor.test.ts",
+          "startLine": 9,
+          "endLine": 9
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/context/SignatureExtractor.test.ts#AUTH_PATH",
+          "name": "AUTH_PATH",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/context/SignatureExtractor.test.ts",
+          "startLine": 10,
+          "endLine": 10
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/context/SignatureExtractor.test.ts#USER_PATH",
+          "name": "USER_PATH",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/context/SignatureExtractor.test.ts",
+          "startLine": 11,
+          "endLine": 11
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/context/SignatureExtractor.test.ts",
+          "target": "vitest",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/context/SignatureExtractor.test.ts",
+          "target": "path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/context/SignatureExtractor.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/SignatureExtractor.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/cli/Watcher.test.ts": {
+      "contentHash": "72870bb8586a70ef7f308391644d8655aeda1de6471a80b0e6333423a02eec06",
+      "mtimeMs": 1788962350743.9182,
+      "size": 4828,
+      "cachedAtMs": 1791289287720,
+      "symbols": [],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/cli/Watcher.test.ts",
+          "target": "vitest",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/cli/Watcher.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/cli/Watcher.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/analysis/Analyzers.test.ts": {
+      "contentHash": "94c5dd3e7a28664c08304693ba66fa878f5d8d36f18c50719545bdb915b94616",
+      "mtimeMs": 1788949799508.7068,
+      "size": 1859,
+      "cachedAtMs": 1791289287723,
+      "symbols": [],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/analysis/Analyzers.test.ts",
+          "target": "vitest",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/analysis/Analyzers.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/analysis/Analyzers.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/analysis/DependencyAnalyzer.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/analysis/Analyzers.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/analysis/ImpactAnalyzer.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/core/AnalysisCache.test.ts": {
+      "contentHash": "3029f6e077460b168549170a9e655dfeb152196f572ed1d48c1e8cb9d83b0bcb",
+      "mtimeMs": 1788964903040.738,
+      "size": 6420,
+      "cachedAtMs": 1791289287726,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/core/AnalysisCache.test.ts#makeSymbol",
+          "name": "makeSymbol",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/core/AnalysisCache.test.ts",
+          "startLine": 10,
+          "endLine": 17
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/core/AnalysisCache.test.ts#makeDep",
+          "name": "makeDep",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/core/AnalysisCache.test.ts",
+          "startLine": 19,
+          "endLine": 23
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/core/AnalysisCache.test.ts#makeTempProject",
+          "name": "makeTempProject",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/core/AnalysisCache.test.ts",
+          "startLine": 26,
+          "endLine": 31
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/core/AnalysisCache.test.ts",
+          "target": "vitest",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/core/AnalysisCache.test.ts",
+          "target": "fs",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/core/AnalysisCache.test.ts",
+          "target": "os",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/core/AnalysisCache.test.ts",
+          "target": "path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/core/AnalysisCache.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/AnalysisCache.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/core/AnalysisCache.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/core/AnalysisCache.test.ts",
+          "target": "path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/core/AnalysisCache.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/core/CodebaseImpact.test.ts": {
+      "contentHash": "21aef7b9dbc6a67c8516b7ba683cc90a5305782569f386216655f360ee5561a9",
+      "mtimeMs": 1791288757110.3208,
+      "size": 3698,
+      "cachedAtMs": 1791289287727,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/core/CodebaseImpact.test.ts#git",
+          "name": "git",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/core/CodebaseImpact.test.ts",
+          "startLine": 11,
+          "endLine": 13
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/core/CodebaseImpact.test.ts#writeFile",
+          "name": "writeFile",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/core/CodebaseImpact.test.ts",
+          "startLine": 15,
+          "endLine": 19
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/core/CodebaseImpact.test.ts#execFile",
+          "name": "execFile",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/core/CodebaseImpact.test.ts",
+          "startLine": 9,
+          "endLine": 9
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/core/CodebaseImpact.test.ts",
+          "target": "vitest",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/core/CodebaseImpact.test.ts",
+          "target": "node:path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/core/CodebaseImpact.test.ts",
+          "target": "node:fs",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/core/CodebaseImpact.test.ts",
+          "target": "node:os",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/core/CodebaseImpact.test.ts",
+          "target": "node:child_process",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/core/CodebaseImpact.test.ts",
+          "target": "node:util",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/core/CodebaseImpact.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/discovery/FileScanner.test.ts": {
+      "contentHash": "ab12ca38fa9857c4e9721c180e82f4cbab3604cfc54b418110462808ce3030b3",
+      "mtimeMs": 1788942578602.0398,
+      "size": 2361,
+      "cachedAtMs": 1791289287729,
+      "symbols": [],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/discovery/FileScanner.test.ts",
+          "target": "vitest",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/discovery/FileScanner.test.ts",
+          "target": "path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/discovery/FileScanner.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/FileScanner.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/discovery/FileScanner.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/IgnoreMatcher.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/discovery/ProjectDetector.test.ts": {
+      "contentHash": "f2a0da5ade9f29c9e61ea1a3d7aea2635b5a12171be1689e38aee5040c8f268e",
+      "mtimeMs": 1788943557737.8127,
+      "size": 1271,
+      "cachedAtMs": 1791289287732,
+      "symbols": [],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/discovery/ProjectDetector.test.ts",
+          "target": "vitest",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/discovery/ProjectDetector.test.ts",
+          "target": "path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/discovery/ProjectDetector.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/FileScanner.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/discovery/ProjectDetector.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/discovery/ProjectDetector.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/parsers/TypeScriptParser.test.ts": {
+      "contentHash": "ba4f63ce57b57f9b170559af6888b27de3fc89af58792cd8a9f4fb6535e76e8d",
+      "mtimeMs": 1788945359080.743,
+      "size": 2049,
+      "cachedAtMs": 1791289287734,
+      "symbols": [],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/parsers/TypeScriptParser.test.ts",
+          "target": "vitest",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/parsers/TypeScriptParser.test.ts",
+          "target": "path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/parsers/TypeScriptParser.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/parsers/typescript/TypeScriptParser.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/index/FileIndex.test.ts": {
+      "contentHash": "a966ddd51124921b732648c713e1058c0203d30bc13600fa75f287b4d5749d97",
+      "mtimeMs": 1788946226125.9421,
+      "size": 1493,
+      "cachedAtMs": 1791289287735,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/index/FileIndex.test.ts#makeFile",
+          "name": "makeFile",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/index/FileIndex.test.ts",
+          "startLine": 5,
+          "endLine": 10
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/index/FileIndex.test.ts",
+          "target": "vitest",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/index/FileIndex.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/index/FileIndex.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/index/SymbolIndex.test.ts": {
+      "contentHash": "37956ca8f0c10d9cc45f063a9fa8252c7151ff3049444ba3f9f996182e6c466d",
+      "mtimeMs": 1788946228142.9087,
+      "size": 2512,
+      "cachedAtMs": 1791289287737,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/index/SymbolIndex.test.ts#makeSymbol",
+          "name": "makeSymbol",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/index/SymbolIndex.test.ts",
+          "startLine": 5,
+          "endLine": 9
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/index/SymbolIndex.test.ts",
+          "target": "vitest",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/index/SymbolIndex.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/index/SymbolIndex.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/diff/ChangeSetImpactAnalyzer.test.ts": {
+      "contentHash": "ec273596c27d6146870eaac1b38c3229287745ca8ec4b8a59a6bbe3bd495f3a8",
+      "mtimeMs": 1791288091497.4192,
+      "size": 5228,
+      "cachedAtMs": 1791289287738,
+      "symbols": [],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/ChangeSetImpactAnalyzer.test.ts",
+          "target": "vitest",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/ChangeSetImpactAnalyzer.test.ts",
+          "target": "node:path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/ChangeSetImpactAnalyzer.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/ChangeSetImpactAnalyzer.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/index/FileIndex.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/ChangeSetImpactAnalyzer.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/diff/ChangeSetImpactAnalyzer.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/ChangeSetImpactAnalyzer.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/diff/types.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/ChangeSetImpactAnalyzer.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/diff/debug.test.ts": {
+      "contentHash": "e615903704463c7812070939c2057881ba4701c82d1478de7cba4ba0d8d9fd0c",
+      "mtimeMs": 1791285219856.319,
+      "size": 2796,
+      "cachedAtMs": 1791289287741,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/debug.test.ts#git",
+          "name": "git",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/debug.test.ts",
+          "startLine": 11,
+          "endLine": 14
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/debug.test.ts#writeFile",
+          "name": "writeFile",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/debug.test.ts",
+          "startLine": 16,
+          "endLine": 20
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/debug.test.ts#execFile",
+          "name": "execFile",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/debug.test.ts",
+          "startLine": 9,
+          "endLine": 9
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/debug.test.ts",
+          "target": "vitest",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/debug.test.ts",
+          "target": "node:fs",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/debug.test.ts",
+          "target": "node:os",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/debug.test.ts",
+          "target": "node:path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/debug.test.ts",
+          "target": "node:child_process",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/debug.test.ts",
+          "target": "node:util",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/debug.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/diff/GitChangeSetProvider.test.ts": {
+      "contentHash": "302ed887cbb51a8c0aff1c7e4d924ac38d198f400b4b4a5eb3069945029923e1",
+      "mtimeMs": 1791284989437.753,
+      "size": 12659,
+      "cachedAtMs": 1791289287743,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/GitChangeSetProvider.test.ts#git",
+          "name": "git",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/GitChangeSetProvider.test.ts",
+          "startLine": 16,
+          "endLine": 19
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/GitChangeSetProvider.test.ts#createRepo",
+          "name": "createRepo",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/GitChangeSetProvider.test.ts",
+          "startLine": 22,
+          "endLine": 28
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/GitChangeSetProvider.test.ts#writeFile",
+          "name": "writeFile",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/GitChangeSetProvider.test.ts",
+          "startLine": 30,
+          "endLine": 34
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/GitChangeSetProvider.test.ts#addAndCommit",
+          "name": "addAndCommit",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/GitChangeSetProvider.test.ts",
+          "startLine": 36,
+          "endLine": 39
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/GitChangeSetProvider.test.ts#execFile",
+          "name": "execFile",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/GitChangeSetProvider.test.ts",
+          "startLine": 10,
+          "endLine": 10
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/GitChangeSetProvider.test.ts#tmpDirs",
+          "name": "tmpDirs",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/GitChangeSetProvider.test.ts",
+          "startLine": 45,
+          "endLine": 45
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/GitChangeSetProvider.test.ts",
+          "target": "vitest",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/GitChangeSetProvider.test.ts",
+          "target": "node:fs",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/GitChangeSetProvider.test.ts",
+          "target": "node:os",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/GitChangeSetProvider.test.ts",
+          "target": "node:path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/GitChangeSetProvider.test.ts",
+          "target": "node:child_process",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/GitChangeSetProvider.test.ts",
+          "target": "node:util",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/GitChangeSetProvider.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/diff/GitChangeSetProvider.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/diff/GitChangeSetProvider.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/diff/errors.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/graph/DependencyGraph.test.ts": {
+      "contentHash": "ebc06d135f402d4fe5b548ad7e617a47d3539cb7c90863a02ede9603215859d1",
+      "mtimeMs": 1788946656257.7852,
+      "size": 4491,
+      "cachedAtMs": 1791289287745,
+      "symbols": [],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/graph/DependencyGraph.test.ts",
+          "target": "vitest",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/graph/DependencyGraph.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/graph/DependencyGraph.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/graph/DependencyGraph.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/graph/GraphBuilder.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/graph/DependencyGraph.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/integration/cli.e2e.test.ts": {
+      "contentHash": "97ed5ff90da9697a6dc843c47d8cbaa287adb086642528eeee0c21b71b0fd0fe",
+      "mtimeMs": 1791280589880.1829,
+      "size": 3113,
+      "cachedAtMs": 1791289287747,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/integration/cli.e2e.test.ts#execAsync",
+          "name": "execAsync",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/integration/cli.e2e.test.ts",
+          "startLine": 7,
+          "endLine": 7
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/integration/cli.e2e.test.ts#PROJECT_ROOT",
+          "name": "PROJECT_ROOT",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/integration/cli.e2e.test.ts",
+          "startLine": 9,
+          "endLine": 9
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/integration/cli.e2e.test.ts#FIXTURE_DIR",
+          "name": "FIXTURE_DIR",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/integration/cli.e2e.test.ts",
+          "startLine": 10,
+          "endLine": 10
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/integration/cli.e2e.test.ts",
+          "target": "vitest",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/integration/cli.e2e.test.ts",
+          "target": "child_process",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/integration/cli.e2e.test.ts",
+          "target": "util",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/integration/cli.e2e.test.ts",
+          "target": "path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/integration/cli.e2e.test.ts",
+          "target": "fs",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/integration/Codebase.test.ts": {
+      "contentHash": "bb8c58c9a1f6aded02cd8aa50a9505fb24a4aa6acfe07056e55e5eb0b5c3dcfc",
+      "mtimeMs": 1788947011780.4148,
+      "size": 2072,
+      "cachedAtMs": 1791289287748,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/integration/Codebase.test.ts#FIXTURE_PATH",
+          "name": "FIXTURE_PATH",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/integration/Codebase.test.ts",
+          "startLine": 5,
+          "endLine": 5
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/integration/Codebase.test.ts",
+          "target": "vitest",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/integration/Codebase.test.ts",
+          "target": "path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/integration/Codebase.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/search/CodeSearch.test.ts": {
+      "contentHash": "d7f02b925b0386cbbd4277fd832fb7bc3b5f3875cd301efe451d43e12ee40200",
+      "mtimeMs": 1788947574879.9622,
+      "size": 4805,
+      "cachedAtMs": 1791289287750,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/search/CodeSearch.test.ts#mockFiles",
+          "name": "mockFiles",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/search/CodeSearch.test.ts",
+          "startLine": 9,
+          "endLine": 13
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/search/CodeSearch.test.ts#mockSymbols",
+          "name": "mockSymbols",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/search/CodeSearch.test.ts",
+          "startLine": 15,
+          "endLine": 21
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/search/CodeSearch.test.ts",
+          "target": "vitest",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/search/CodeSearch.test.ts",
+          "target": "path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/search/CodeSearch.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/Codebase.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/search/CodeSearch.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/search/CodeSearch.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/search/CodeSearch.test.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/ai/providers/NoopAIProvider.ts": {
+      "contentHash": "e9f665b6462d6d3c6fe50653cb34d74d152624cf9c459778de676d70aeefa646",
+      "mtimeMs": 1791278656680.51,
+      "size": 728,
+      "cachedAtMs": 1791289287849,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/ai/providers/NoopAIProvider.ts#NoopAIProvider",
+          "name": "NoopAIProvider",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/ai/providers/NoopAIProvider.ts",
+          "startLine": 20,
+          "endLine": 26
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/ai/providers/NoopAIProvider.ts#complete",
+          "name": "complete",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/ai/providers/NoopAIProvider.ts",
+          "startLine": 23,
+          "endLine": 25,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/ai/providers/NoopAIProvider.ts#NoopAIProvider"
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/ai/providers/NoopAIProvider.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/interfaces.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/ai/providers/NoopAIProvider.ts#NoopAIProvider",
+          "target": "AIProvider",
+          "type": "implements"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/ContextBuildStrategy.ts": {
+      "contentHash": "8b41e0b631c618fc8dcab1ae817c0bd9a523d02fc7d9b3be9e30bf5f50994723",
+      "mtimeMs": 1791277764298.247,
+      "size": 1185,
+      "cachedAtMs": 1791289287850,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/ContextBuildStrategy.ts#ContextBuildStrategy",
+          "name": "ContextBuildStrategy",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/ContextBuildStrategy.ts",
+          "startLine": 14,
+          "endLine": 29
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/ContextBuildStrategy.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/types.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/ContextBuildStrategy.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/ContextBuildStrategy.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/ContextBuildStrategy.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/DeepStrategy.ts": {
+      "contentHash": "29fee35157e70f871f80dabb816f3ec4ebdf2523c896fa0b93b2a8b7b4c286e6",
+      "mtimeMs": 1791277800367.6973,
+      "size": 1211,
+      "cachedAtMs": 1791289287851,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/DeepStrategy.ts#DeepStrategy",
+          "name": "DeepStrategy",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/DeepStrategy.ts",
+          "startLine": 16,
+          "endLine": 33
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/DeepStrategy.ts#buildNodes",
+          "name": "buildNodes",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/DeepStrategy.ts",
+          "startLine": 19,
+          "endLine": 32,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/DeepStrategy.ts#DeepStrategy"
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/DeepStrategy.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/ContextBuildStrategy.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/DeepStrategy.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/types.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/DeepStrategy.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/DeepStrategy.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/DeepStrategy.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/DeepStrategy.ts#DeepStrategy",
+          "target": "ContextBuildStrategy",
+          "type": "implements"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/index.ts": {
+      "contentHash": "c6ce7a2098e7ec071cb2ca0a4d45f0fd0c870bb0897903f00ffe0c4ae3ddae77",
+      "mtimeMs": 1791277807304.1804,
+      "size": 237,
+      "cachedAtMs": 1791289287852,
+      "symbols": [],
+      "dependencies": []
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/ShallowStrategy.ts": {
+      "contentHash": "029ca9d3704095a3ad6b6b45fcbdac290bcc364080a599d844c72a87ff8b2f8f",
+      "mtimeMs": 1791277773942.7039,
+      "size": 939,
+      "cachedAtMs": 1791289287852,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/ShallowStrategy.ts#ShallowStrategy",
+          "name": "ShallowStrategy",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/ShallowStrategy.ts",
+          "startLine": 13,
+          "endLine": 25
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/ShallowStrategy.ts#buildNodes",
+          "name": "buildNodes",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/ShallowStrategy.ts",
+          "startLine": 16,
+          "endLine": 24,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/ShallowStrategy.ts#ShallowStrategy"
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/ShallowStrategy.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/ContextBuildStrategy.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/ShallowStrategy.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/types.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/ShallowStrategy.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/ShallowStrategy.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/ShallowStrategy.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/ShallowStrategy.ts#ShallowStrategy",
+          "target": "ContextBuildStrategy",
+          "type": "implements"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/SignatureStrategy.ts": {
+      "contentHash": "98e0abe4f58bb9e3c6415da5926bae131832e43986a8eb28ea3b3ac5821a6964",
+      "mtimeMs": 1791277790935.9863,
+      "size": 2838,
+      "cachedAtMs": 1791289287853,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/SignatureStrategy.ts#SignatureStrategy",
+          "name": "SignatureStrategy",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/SignatureStrategy.ts",
+          "startLine": 17,
+          "endLine": 78
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/SignatureStrategy.ts#buildNodes",
+          "name": "buildNodes",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/SignatureStrategy.ts",
+          "startLine": 21,
+          "endLine": 42,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/SignatureStrategy.ts#SignatureStrategy"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/SignatureStrategy.ts#buildAstSignatureNode",
+          "name": "buildAstSignatureNode",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/SignatureStrategy.ts",
+          "startLine": 46,
+          "endLine": 77,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/SignatureStrategy.ts#SignatureStrategy"
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/SignatureStrategy.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/ContextBuildStrategy.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/SignatureStrategy.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/types.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/SignatureStrategy.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/SignatureStrategy.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/index/SymbolIndex.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/SignatureStrategy.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/FileContextBuilder.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/SignatureStrategy.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/context/SignatureExtractor.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/context/strategies/SignatureStrategy.ts#SignatureStrategy",
+          "target": "ContextBuildStrategy",
+          "type": "implements"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/src/parsers/typescript/TypeScriptParser.ts": {
+      "contentHash": "319aba78b859138b7e855239076f308a83bda76fb0b0219e0afe185afe214c5c",
+      "mtimeMs": 1788945830829.4856,
+      "size": 5048,
+      "cachedAtMs": 1791289287853,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/parsers/typescript/TypeScriptParser.ts#TypeScriptParser",
+          "name": "TypeScriptParser",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/parsers/typescript/TypeScriptParser.ts",
+          "startLine": 7,
+          "endLine": 151
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/parsers/typescript/TypeScriptParser.ts#supports",
+          "name": "supports",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/parsers/typescript/TypeScriptParser.ts",
+          "startLine": 14,
+          "endLine": 16,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/parsers/typescript/TypeScriptParser.ts#TypeScriptParser"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/src/parsers/typescript/TypeScriptParser.ts#parse",
+          "name": "parse",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/src/parsers/typescript/TypeScriptParser.ts",
+          "startLine": 18,
+          "endLine": 150,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/src/parsers/typescript/TypeScriptParser.ts#TypeScriptParser"
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/parsers/typescript/TypeScriptParser.ts",
+          "target": "ts-morph",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/parsers/typescript/TypeScriptParser.ts",
+          "target": "path",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/parsers/typescript/TypeScriptParser.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/interfaces.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/parsers/typescript/TypeScriptParser.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/types.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/parsers/typescript/TypeScriptParser.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/src/core/errors.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/src/parsers/typescript/TypeScriptParser.ts#TypeScriptParser",
+          "target": "CodeParser",
+          "type": "implements"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/AuthService.ts": {
+      "contentHash": "4c1b41f96a05835526b763c993f8f2588945be416826b54a316f3e29c056f292",
+      "mtimeMs": 1791277710622.2085,
+      "size": 209,
+      "cachedAtMs": 1791289287945,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/AuthService.ts#AuthService",
+          "name": "AuthService",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/AuthService.ts",
+          "startLine": 1,
+          "endLine": 9
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/AuthService.ts#validate",
+          "name": "validate",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/AuthService.ts",
+          "startLine": 2,
+          "endLine": 4,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/AuthService.ts#AuthService"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/AuthService.ts#generateToken",
+          "name": "generateToken",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/AuthService.ts",
+          "startLine": 6,
+          "endLine": 8,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/AuthService.ts#AuthService"
+        }
+      ],
+      "dependencies": []
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/ChunkerTarget.ts": {
+      "contentHash": "7edb73f5fc81b973ed6c3923c5b7113426553a587d0964857b2eec301ad06d0b",
+      "mtimeMs": 1791279154252.3513,
+      "size": 696,
+      "cachedAtMs": 1791289288032,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/ChunkerTarget.ts#LargeService",
+          "name": "LargeService",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/ChunkerTarget.ts",
+          "startLine": 11,
+          "endLine": 30
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/ChunkerTarget.ts#methodOne",
+          "name": "methodOne",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/ChunkerTarget.ts",
+          "startLine": 16,
+          "endLine": 23,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/ChunkerTarget.ts#LargeService"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/ChunkerTarget.ts#methodTwo",
+          "name": "methodTwo",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/ChunkerTarget.ts",
+          "startLine": 25,
+          "endLine": 29,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/ChunkerTarget.ts#LargeService"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/ChunkerTarget.ts#ChunkDto",
+          "name": "ChunkDto",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/ChunkerTarget.ts",
+          "startLine": 5,
+          "endLine": 7
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/ChunkerTarget.ts#ChunkAlias",
+          "name": "ChunkAlias",
+          "kind": "typeAlias",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/ChunkerTarget.ts",
+          "startLine": 9,
+          "endLine": 9
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/ChunkerTarget.ts#standaloneFunction",
+          "name": "standaloneFunction",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/ChunkerTarget.ts",
+          "startLine": 32,
+          "endLine": 34
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/ChunkerTarget.ts",
+          "target": "@nestjs/common",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/ChunkerTarget.ts",
+          "target": "class-transformer",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/ChunkerTarget.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/SomeDependency.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/PrismaService.ts": {
+      "contentHash": "4942f281c158cdea7c3b7a0f91d9adf7c31e70f142bd0664d176dcc85b2391e7",
+      "mtimeMs": 1791277718289.0981,
+      "size": 384,
+      "cachedAtMs": 1791289288134,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/PrismaService.ts#PrismaService",
+          "name": "PrismaService",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/PrismaService.ts",
+          "startLine": 3,
+          "endLine": 15
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/PrismaService.ts#create",
+          "name": "create",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/PrismaService.ts",
+          "startLine": 4,
+          "endLine": 6,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/PrismaService.ts#PrismaService"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/PrismaService.ts#findById",
+          "name": "findById",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/PrismaService.ts",
+          "startLine": 8,
+          "endLine": 10,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/PrismaService.ts#PrismaService"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/PrismaService.ts#delete",
+          "name": "delete",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/PrismaService.ts",
+          "startLine": 12,
+          "endLine": 14,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/PrismaService.ts#PrismaService"
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/PrismaService.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/UserService.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/UserService.ts": {
+      "contentHash": "33a8bc8a3fe18ed073041c55ee3b79e05a8602bcd831da78d1b599ec1b9b6892",
+      "mtimeMs": 1791277704848.8643,
+      "size": 888,
+      "cachedAtMs": 1791289288135,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/UserService.ts#UserService",
+          "name": "UserService",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/UserService.ts",
+          "startLine": 15,
+          "endLine": 36
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/UserService.ts#createUser",
+          "name": "createUser",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/UserService.ts",
+          "startLine": 21,
+          "endLine": 27,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/UserService.ts#UserService"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/UserService.ts#findUser",
+          "name": "findUser",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/UserService.ts",
+          "startLine": 29,
+          "endLine": 31,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/UserService.ts#UserService"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/UserService.ts#deleteUser",
+          "name": "deleteUser",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/UserService.ts",
+          "startLine": 33,
+          "endLine": 35,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/UserService.ts#UserService"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/UserService.ts#CreateUserDto",
+          "name": "CreateUserDto",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/UserService.ts",
+          "startLine": 4,
+          "endLine": 7
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/UserService.ts#User",
+          "name": "User",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/UserService.ts",
+          "startLine": 9,
+          "endLine": 13
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/UserService.ts#buildUser",
+          "name": "buildUser",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/UserService.ts",
+          "startLine": 38,
+          "endLine": 40
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/UserService.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/AuthService.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/UserService.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/context-project/PrismaService.js",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/next-project/next.config.js": {
+      "contentHash": "8222b8169ee86f25cdccd84d340340060ae3f0cff55e2ea9d344d7c332733b71",
+      "mtimeMs": 1788943554331.8975,
+      "size": 21,
+      "cachedAtMs": 1791289288144,
+      "symbols": [],
+      "dependencies": []
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/AuthService.ts": {
+      "contentHash": "1ebf87c2118a57b30040e3ed5a4f44bf4368f2de5f3f5ddf4e3e809f69ee35ad",
+      "mtimeMs": 1788945355800.568,
+      "size": 78,
+      "cachedAtMs": 1791289288237,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/AuthService.ts#AuthService",
+          "name": "AuthService",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/AuthService.ts",
+          "startLine": 1,
+          "endLine": 5
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/AuthService.ts#login",
+          "name": "login",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/AuthService.ts",
+          "startLine": 2,
+          "endLine": 4,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/AuthService.ts#AuthService"
+        }
+      ],
+      "dependencies": []
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/UserService.ts": {
+      "contentHash": "e47297468badd2b70540a4934d4d39b9ab5b5527e30ce3cd6011c9efee2ba74d",
+      "mtimeMs": 1788945550754.4016,
+      "size": 317,
+      "cachedAtMs": 1791289288326,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/UserService.ts#UserService",
+          "name": "UserService",
+          "kind": "class",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/UserService.ts",
+          "startLine": 7,
+          "endLine": 14
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/UserService.ts#getUser",
+          "name": "getUser",
+          "kind": "method",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/UserService.ts",
+          "startLine": 11,
+          "endLine": 13,
+          "parentId": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/UserService.ts#UserService"
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/UserService.ts#IUser",
+          "name": "IUser",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/UserService.ts",
+          "startLine": 3,
+          "endLine": 5
+        },
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/UserService.ts#defaultUser",
+          "name": "defaultUser",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/UserService.ts",
+          "startLine": 16,
+          "endLine": 16
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/UserService.ts",
+          "target": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/AuthService.js",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/parser-project/UserService.ts#UserService",
+          "target": "IUser",
+          "type": "implements"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/basic-project/src/index.ts": {
+      "contentHash": "f9444510dc7403e41049deb133f6892aa6a63c05591b2b59e4ee5b234d7bbd99",
+      "mtimeMs": 1788942568346.0862,
+      "size": 22,
+      "cachedAtMs": 1791289288329,
+      "symbols": [],
+      "dependencies": []
+    },
+    "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/next-project/src/index.ts": {
+      "contentHash": "b4d1416ba8aa95b55df4aeb92c5d4da49c536c2532800172725dcd38276b72f6",
+      "mtimeMs": 1788944030613.67,
+      "size": 15,
+      "cachedAtMs": 1791289288330,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/next-project/src/index.ts#App",
+          "name": "App",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/Codebase-intelligence/tests/fixtures/next-project/src/index.ts",
+          "startLine": 1,
+          "endLine": 1
+        }
+      ],
+      "dependencies": []
+    }
+  }
+}

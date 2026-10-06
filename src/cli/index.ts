@@ -196,17 +196,113 @@ program
 
 program
   .command('impact')
-  .description('Analyze the impact of changing a file')
-  .argument('<file>', 'File path')
-  .argument('[path]', 'Path to the codebase', '.')
-  .option('-w, --watch', 'Watch for changes and re-run automatically')
-  .action(async (file, rawPath, opts) => {
+  .description(
+    'Analyze the impact of changing a file or a set of Git changes.\n\n' +
+    '  File mode (original):  impact <file> [path]\n' +
+    '  Git diff mode:         impact [path] --since <ref> | --staged | --uncommitted',
+  )
+  .argument('[file-or-path]', 'File path (file mode) or codebase path (diff mode)', '.')
+  .argument('[path]', 'Path to the codebase when in file mode', '')
+  .option('--since <ref>', 'Changes introduced since <ref> (merge-base comparison)')
+  .option('--staged', 'Only staged (indexed) changes')
+  .option('--uncommitted', 'All uncommitted changes including untracked files (default Git mode)')
+  .option('-f, --format <format>', 'Output format: text | json (default: text)')
+  .option('--tests-only', 'Print only related test file paths, one per line')
+  .option('-w, --watch', 'Watch for changes and re-run automatically (file mode only)')
+  .action(async (fileOrPath, secondPath, opts) => {
+    // Determine mode: diff mode if any of --since/--staged/--uncommitted are set
+    const isDiffMode = opts.since !== undefined || opts.staged === true || opts.uncommitted === true;
+
+    if (opts.since !== undefined && (opts.staged || opts.uncommitted)) {
+      console.error('Error: --since cannot be combined with --staged or --uncommitted.');
+      process.exit(1);
+    }
+    if (opts.staged && opts.uncommitted) {
+      console.error('Error: --staged and --uncommitted are mutually exclusive.');
+      process.exit(1);
+    }
+
+    const format: 'text' | 'json' = opts.format === 'json' ? 'json' : 'text';
+
+    // ---- DIFF MODE -------------------------------------------------------
+    if (isDiffMode) {
+      const targetPath = resolveTarget(fileOrPath || '.');
+      try {
+        const codebase = await loadAndAnalyze(targetPath);
+
+        const changeOpts: { since?: string; staged?: boolean; uncommitted?: boolean } = {};
+        if (opts.since) changeOpts.since = opts.since;
+        if (opts.staged) changeOpts.staged = true;
+        if (opts.uncommitted) changeOpts.uncommitted = true;
+
+        const impact = await codebase.impactOfChanges(changeOpts);
+
+        if (opts.testsOnly) {
+          impact.tests.forEach(t => process.stdout.write(t + '\n'));
+          return;
+        }
+
+        if (format === 'json') {
+          printJson(impact);
+          return;
+        }
+
+        // Text output
+        const heading = (label: string) => console.log(`\n${label}`);
+        const items = (arr: string[]) =>
+          arr.length ? arr.forEach(f => console.log(`  ${f}`)) : console.log('  (none)');
+
+        console.log('⚠  Granularity: file — all dependents of every changed file are listed.');
+        heading('Changed:');
+        impact.changed.forEach(c => console.log(`  [${c.status.padEnd(8)}] ${c.path}`));
+        heading('Direct dependents:');
+        items(impact.direct);
+        heading('Indirect dependents:');
+        items(impact.indirect);
+        heading('Related tests:');
+        items(impact.tests);
+        if (impact.globalChanges.length) {
+          heading('Global changes (affect entire codebase):');
+          items(impact.globalChanges);
+        }
+        if (impact.unanalyzable.length) {
+          heading('Unanalyzable:');
+          impact.unanalyzable.forEach(u => console.log(`  [${u.reason}] ${u.path}`));
+        }
+        if (impact.unresolvedDependencies.length) {
+          heading('Unresolved dependencies from changed files:');
+          items(impact.unresolvedDependencies);
+        }
+      } catch (err: unknown) {
+        console.error(`Error: ${(err as Error).message}`);
+        process.exit(1);
+      }
+      return;
+    }
+
+    // ---- FILE MODE (original, backwards-compat) --------------------------
+    const file = fileOrPath;
+    const rawPath = secondPath || '.';
     const targetPath = resolveTarget(rawPath);
 
     const run = (codebase: Codebase) => {
       const cf = findFile(codebase, file);
       if (!cf) { console.error(`Error: File "${file}" not found.`); return; }
-      printJson(codebase.impact(cf.path));
+
+      if (format === 'json') {
+        printJson(codebase.impact(cf.path));
+        return;
+      }
+
+      const result = codebase.impact(cf.path);
+      const items = (arr: string[]) =>
+        arr.length ? arr.forEach(f => console.log(`  ${f}`)) : console.log('  (none)');
+      console.log('\nDirect dependents:');
+      items(result.direct);
+      console.log('\nIndirect dependents:');
+      items(result.indirect);
+      console.log('\nRelated tests:');
+      items(result.tests);
     };
 
     try {
@@ -216,13 +312,14 @@ program
         const codebase = await loadAndAnalyze(targetPath);
         const cf = findFile(codebase, file);
         if (!cf) { console.error(`Error: File "${file}" not found.`); process.exit(1); }
-        printJson(codebase.impact(cf.path));
+        run(codebase);
       }
     } catch (err: unknown) {
       console.error(`Error: ${(err as Error).message}`);
       process.exit(1);
     }
   });
+
 
 program
   .command('clear-cache')
